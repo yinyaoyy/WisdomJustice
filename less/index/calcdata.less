@@ -1,0 +1,76 @@
+.calc-data {
+    background: url(../img/index-bottom-bg.jpg);
+    background-size: 100% 100%;
+    .model-data-list {
+        li {
+            float: left;
+            width: 20%;
+            box-sizing: border-box;
+            padding: 40px 5px;
+            text-align: center;
+            border-right: 2px solid #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+            &:nth-child(5n) {
+                border-right: none;
+            }
+            &:last-child {
+                border-right: none;
+                border-bottom: none;
+            }
+            &:nth-last-child(5) {
+                border-bottom: none;
+            }
+            &:nth-last-child(4) {
+                border-bottom: none;
+            }
+            &:nth-last-child(3) {
+                border-bottom: none;
+            }
+            &:nth-last-child(2) {
+                border-bottom: none;
+            }
+            .num {
+                color: #1296D6;
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            .line {
+                text-align: center;
+                span {
+                    display: inline-block;
+                    position: relative;
+                    width: 20px;
+                    height: 3px;
+                    background: #2B96FE;
+                    &:before {
+                        display: block;
+                        content: '';
+                        width: 27px;
+                        height: 0;
+                        border-bottom: 1px dotted #999;
+                        position: absolute;
+                        right: -26px;
+                        top: 1px;
+                    }
+                    &:after {
+                        display: block;
+                        content: '';
+                        width: 27px;
+                        height: 0;
+                        border-bottom: 1px dotted #999;
+                        position: absolute;
+                        left: -26px;
+                        top: 1px;
+                    }
+                }
+            }
+            .text {
+                color: #333;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>12348锡林郭勒法网</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script src="js/components/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/components/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/components/page/css/layui.css" />
+		<script src="js/components/page/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/components/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/classic.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/legalAidFastForm.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header-wrapper">
+				<div class="logo">
+					<img src="img/index-w-top.png" alt="" />
+				</div>
+				<div class="mongolian mogolian-index">
+					<a href="http://116.112.6.178:8068/xmsf/index.shtml" target="_blank"></a>
+				</div>
+				<div class="user-login-list">
+				</div>
+			</div>
+		</div>
+		<div class="search-box-banner">
+			<div class="content-wrapper">
+				<div class="search-box">
+					<ul class="typeList">
+					</ul>
+					<div class="search-control">
+						<input type="text" name="" id="search-text" value="" class="search-bar" />
+						<div class="search-btn" id="index-search">
+							<img src="img/search-btn.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="model">
+			<div class="content-wrapper">
+				<div class="model-title">
+					<div class="model-title-text">公共法律服务</div>
+					<div class="model-title-describe">本公共法律平台 为您提供以下法律服务</div>
+				</div>
+				<div class="model-content">
+					<ul class="index-nav-list">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="model">
+			<div class="model-content">
+				<div class="data-news">
+					<div class="news-content">
+						<div class="policy-release">
+							<div class="news-head">
+								<div class="news-title">
+									<i><img src="img/icon1.png"/></i>
+									<span>政策发布</span>
+								</div>
+								<div class="more" id="1">
+									<img src="img/icon3.png" />
+								</div>
+							</div>
+							<ul class="news-list policy-release-list">
+							</ul>
+						</div>
+						<div class="service-dynamics">
+							<div class="dotted-line">
+								<img src="img/dotted.png" />
+							</div>
+							<div class="news-head">
+								<div class="news-title">
+									<i><img src="img/icon2.png"/></i>
+									<span>服务动态</span>
+								</div>
+								<div class="more" id="2">
+									<img src="img/icon3.png" />
+								</div>
+							</div>
+							<ul class="news-list service-dynamics-list">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="model">
+			<div class="model-title">
+				<div class="model-title-text">法律咨询服务</div>
+				<div class="model-title-describe">为您提供全面的法律咨询服务</div>
+			</div>
+			<div class="model-content">
+				<div class="consultation">
+					<div class="consultation-service">
+						<div class="consultation-head">
+							<div class="consultation-title">
+								<i><img src="img/icon5.png"/></i>
+								<span>咨询服务</span>
+								<div class="num">已回复 <span id="totalCount"></span> 个问题</div>
+							</div>
+							<div class="more">
+								<img src="img/icon3.png" />
+							</div>
+						</div>
+						<ul class="consultation-list">
+						</ul>
+					</div>
+					<div class="consultation-area">
+						<div class="dotted-line">
+							<img src="img/dotted.png" />
+						</div>
+						<div class="flag">
+						</div>
+						<a href="consultation.html">
+							<div class="phone">
+								<div class="phone-head">
+									<img src="img/phone-head.png" alt="" />
+								</div>
+								<div class="phone-text">
+									我要咨询
+								</div>
+							</div>
+						</a>
+						<div class="attention">
+							<div class="title">
+								法律咨询规则
+							</div>
+							<ul class="attention-list">
+								<li>工作人员会根据您咨询的问题进行答复，答复内容仅是一种指导性、原则性的意见，不具备法律效力。</li>
+								<li>请您把要咨询的问题尽量描述清楚，以便进行有针对性的回答，如果不知道如何提问，可去已解答案例寻找相关应答。</li>
+								<li>您也可拨打12348服务热线进行咨询。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="model map">
+			<div class="content-wrapper">
+				<div class="model-title">
+					<div class="model-title-text">法律服务地图</div>
+					<div class="model-title-describe">通过地图快速查找指定司法机构</div>
+				</div>
+				<div class="model-content">
+					<div id="xmmap"></div>
+				</div>
+			</div>
+		</div>
+		<div class="model">
+			<div class="content-wrapper">
+				<div class="model-title">
+					<div class="model-title-text">全国法律服务</div>
+					<div class="model-title-describe">为您提供法律服务导航</div>
+				</div>
+				<div class="model-content">
+					<div class="national-law-service">
+						<div class="left">
+							<a href="http://search.chinalaw.gov.cn/search2.html" target="_blank">
+							</a>
+						</div>
+						<div class="right">
+							<div class="top">
+								<a class="flfwts" onclick="Common.alertComplaintBox()"></a>
+								<a class="add1"></a>
+								<a class="sfxzalcx" href="http://alk.12348.gov.cn/" target="_blank"></a>
+								<a class="add2"></a>
+							</div>
+							<div class="bottom">
+								<a class="qgls" href="http://oa.acla.org.cn/login.jsp" target="_blank"></a>
+								<a class="qgsfks" href="http://exam1.sinotn.com/EXAMSF/public/index.jsp" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer"></div>
+	</body>
+
+</html>

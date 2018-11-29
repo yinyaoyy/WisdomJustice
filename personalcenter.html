@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>12348锡林郭勒法网</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/personalcenter.css" />
+		<script src="js/components/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/components/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/components/page/css/layui.css" />
+		<script src="js/components/page/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/classic.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/personalcenter.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header-wrapper">
+				<div class="logo">
+					<img src="img/logo-b.png" alt="" />
+				</div>
+				<div class="mongolian">
+					<a href="http://116.112.6.178:8068/xmsf/index.shtml" target="_blank"></a>
+				</div>
+				<div class="user-login-list">
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="content-wrapper">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personalcenter">
+			<div class="content-wrapper">
+				<div class="title">个人中心</div>
+				<div class="personal-content">
+					<div class="content-tab">
+						<ul>
+							<li>
+								<a href="javascript:;" class="lv1" data-for="case">我的案件</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="lv1" data-for="replied">我的咨询</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="lv1" data-for="complaint">我的投诉</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="lv1" data-for="draft">我的草稿</a>
+							</li>
+							<li>
+								<a style="border-bottom:none" href="javascript:;" class="lv1" data-for="personal-info">我的信息</a>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="content-title"></div>
+						<div class="tab-content" id="case">
+							<div class="filter">
+								<div class="caseTitle filter-item">
+									案件标题：
+									<input type="text" placeholder="请输入案件标题" id="caseTitle" />
+								</div>
+								<div class="startend filter-item">
+									咨询时间：
+									<input type="text" name="" id="caseTime" value="" />
+								</div>
+								<div class="caseType filter-item">
+									案件类型：
+									<select name="" id="caseType"></select>
+								</div>
+								<div class="caseStatus filter-item">
+									案件进度：
+									<select name="" id="caseStatus">
+										<option value="1">受理中</option>
+										<option value="2">已结案</option>
+									</select>
+								</div>
+								<button id="case-search-btn">搜索</button>
+							</div>
+							<table class="result-table" border="1" id="caseList">
+								<thead>
+									<th>案件标题</th>
+									<th width="150">时间</th>
+									<th width="120">案件类型</th>
+									<th width="150">案件进度</th>
+									<th width="160">查看</th>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="pagecount">
+								<div class="count">
+									共 <span id="pageCount"></span> 条记录
+								</div>
+								<div id="pagination">
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" id="replied">
+							<div class="filter">
+								<div class="filter-item">
+									标题：
+									<input type="text" placeholder="请输入标题" id="zxTitle"/>
+								</div>
+								<div class="filter-item">
+									咨询时间：
+									<input type="text" name="" id="zxTime" value="" class="consultation-time" />
+								</div>
+								<div class="filter-item">
+									状态：
+									<select name="" id="isComment">
+										<option value="0">未回复</option>
+										<option value="1">已回复</option>
+									</select>
+								</div>
+								<button id="zx-search-btn">搜索</button>
+							</div>
+							<table class="result-table" border="1" id="consultation-result-list">
+								<thead>
+									<th>咨询标题</th>
+									<th width="250">咨询时间</th>
+									<th width="100">状态</th>
+									<th width="100">操作</th>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="pagecount">
+								<div class="count">
+									共<span id="consultationPageCount">3</span>条记录
+								</div>
+								<div class="pagination" id="qaPagination">
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" id="personal-info">
+							<table>
+								<tr>
+									<td class="title-text">登录账号</td>
+									<td id="loginName"></td>
+									<td class="title-text">用户类型</td>
+									<td id="role"></td>
+								</tr>
+								<tr>
+									<td class="title-text">姓名</td>
+									<td id="real-name"></td>
+									<td class="title-text">性别</td>
+									<td>
+										<select name="sexy" id="xb">
+											<option value="">--请选择--</option>
+											<option value="1">男</option>
+											<option value="2">女</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td class="title-text required">所属地区</td>
+									<td>
+										<select name="" id="diquId" class="diqu"></select>
+									</td>
+									<td class="title-text">所属乡镇</td>
+									<td>
+										<select name="" id="xzId" class="xz"></select>
+									</td>
+
+								</tr>
+								<tr>
+									<td class="title-text">出生日期</td>
+									<td><input type="text" name="" id="myBirthday" value="" /></td>
+									<td class="title-text required">手机号码</td>
+									<td><input type="text" name="" id="mob" value="" /></td>
+								</tr>
+								<tr>
+									<td class="title-text required">职业</td>
+									<td>
+										<select name="occupation" id="occu">
+											<option value="">--请选择--</option>
+										</select>
+									</td>
+									<td class="title-text required">学历</td>
+									<td>
+										<select name="" id="edc">
+											<option value="">--请选择--</option>
+											<option value="1">博士</option>
+											<option value="2">硕士</option>
+											<option value="3">本科</option>
+											<option value="4">大专</option>
+											<option value="5">高中</option>
+											<option value="6">初中</option>
+											<option value="7">小学</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+							<div class="btn-list">
+								<button id="keep">保存</button>
+								<button id="cancel">取消</button>
+							</div>
+						</div>
+						<div class="tab-content" id="draft">
+							<div class="filter">
+								<div class="draftTitle filter-item">
+									案件标题：
+									<input type="text" placeholder="请输入案件标题" id="draftTitle" />
+								</div>
+								<div class="startend filter-item">
+									咨询时间：
+									<input type="text" name="" id="draftTime" value="" />
+								</div>
+								<button id="draft-search-btn">搜索</button>
+							</div>
+							<table class="result-table" border="1" id="draftList">
+								<thead>
+									<th>案件标题</th>
+									<th>时间</th>
+									<th width="120">案件类型</th>
+									<th width="150">案件进度</th>
+									<th width="100">查看</th>
+								</thead>								
+								<tbody>
+								</tbody>
+							</table>
+							<div class="pagecount">
+								<div class="count">
+									共 <span id="draft-pageCount"></span> 条记录
+								</div>
+								<div class="pagination" id="draft-pagination">
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" id="complaint">
+							<div class="filter">
+								<button class="pro-btn">我要投诉</button>
+							</div>
+							<table id="complaint-list">
+								<thead>
+									<th width="520">投诉标题</th>
+									<th width="185">投诉时间</th>
+									<th width="90">状态</th>
+									<th width="100">查看</th>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div class="pagecount">
+								<div class="count">
+									共<span id="complaintCount"></span>条记录
+								</div>
+								<div class="pagination" id="complaintPagination">
+
+								</div>
+							</div>
+						</div>
+						<div class="sec-detail" id="qa-detail">
+							<div class="btn-list">
+								<button class="goback-qa">返回</button>
+							</div>
+						</div>
+						<div class="sec-detail" id="complaint-detail">
+							<div class="btn-list">
+								<button class="goback-complaint">返回</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+
+</html>

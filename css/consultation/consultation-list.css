@@ -1,0 +1,601 @@
+.nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #1296D6;
+  margin-top: 122px;
+}
+.nav .nav-list {
+  width: 100%;
+  list-style: none;
+}
+.nav .nav-list li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  padding: 0 15px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.nav .nav-list li:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #C1C1C1;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+.nav .nav-list li:last-child:after {
+  content: '';
+  display: none;
+}
+.nav .nav-list li a {
+  color: #FFFFFF;
+}
+.nav .nav-list li.active:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 36px;
+  z-index: 19890125;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.consultation-detail {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.consultation-detail .detail-content {
+  width: 1000px;
+  margin: 20px auto 0;
+}
+.consultation-detail .detail-content .detail-left {
+  width: 700px;
+  float: left;
+  height: 1000px;
+}
+.consultation-detail .detail-content .detail-left .bread {
+  padding-left: 30px;
+  position: relative;
+  height: 30px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+.consultation-detail .detail-content .detail-left .bread:before {
+  content: url(../../img/icon4.png);
+  position: absolute;
+  top: 1px;
+  left: 10px;
+}
+.consultation-detail .detail-content .detail-left .bread ul {
+  list-style: none;
+}
+.consultation-detail .detail-content .detail-left .bread ul li {
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+}
+.consultation-detail .detail-content .detail-left .bread ul li:after {
+  content: '>';
+  height: 20px;
+  line-height: 20px;
+  padding: 0 3px;
+}
+.consultation-detail .detail-content .detail-left .bread ul li:last-child:after {
+  content: '';
+  display: none;
+}
+.consultation-detail .detail-content .detail-left .bread ul li a:hover {
+  color: #1296d6;
+}
+.consultation-detail .detail-content .detail-left .search-box {
+  width: 696px;
+  height: 32px;
+  line-height: 32px;
+  border: 2px solid #1296D6;
+  margin-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .search-box .con-select {
+  width: 240px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: none;
+  float: left;
+  border-right: 2px solid #1296d6;
+}
+.consultation-detail .detail-content .detail-left .search-box #p-select {
+  width: 135px;
+}
+.consultation-detail .detail-content .detail-left .search-box input {
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+  float: left;
+}
+.consultation-detail .detail-content .detail-left .search-box button {
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  background: #1296D6;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-left .detail-q {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-q:before {
+  content: url(../../img/q.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  left: 8px;
+}
+.consultation-detail .detail-content .detail-left .detail-q .q-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+}
+.consultation-detail .detail-content .detail-left .detail-q .q-msg {
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+.consultation-detail .detail-content .detail-left .detail-q .q-time {
+  font-size: 13px;
+  text-align: right;
+}
+.consultation-detail .detail-content .detail-left .detail-a {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .a-title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .a-title p {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .a-title p:before {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .a-title p:after {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .a-msg {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .a-msg:before {
+  content: url(../img/an.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  left: 8px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .a-msg .name {
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  color: #1296D6;
+  position: relative;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .a-msg .msg {
+  font-size: 13px;
+  line-height: 2;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .qa-closely {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .qa-closely .closely-q {
+  box-sizing: border-box;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 2;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .qa-closely .closely-q:before {
+  content: '追问';
+  width: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #e1001a;
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #E1001A;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .qa-closely .closely-a {
+  box-sizing: border-box;
+  padding-left: 100px;
+  position: relative;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .qa-closely .closely-a:before {
+  content: '追答';
+  width: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #29a0da;
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #29a0da;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs {
+  padding: 20px 0;
+  border-bottom: 1px solid #CCCCCC;
+  text-align: right;
+  font-size: 13px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs .re-time {
+  display: inline-block;
+  margin-right: 15px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs #good {
+  display: inline-block;
+  margin-right: 15px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs #good img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs #diss {
+  display: inline-block;
+  margin-right: 15px;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs #diss img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-left .detail-a .qa-box .detail-thumbs .closely-btn {
+  display: inline-block;
+  background: transparent;
+  margin-right: 15px;
+  border: 1px solid #1296D6;
+  color: #1296D6;
+  border-radius: 4px;
+  text-align: center;
+  width: 50px;
+  height: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-left .detail-list .title-text {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-list .title-text p {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 20px;
+  text-align: center;
+}
+.consultation-detail .detail-content .detail-left .detail-list .title-text p:before {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-list .title-text p:after {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li {
+  padding: 15px 0 15px 40px;
+  border-bottom: 1px solid #CCCCCC;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li:before {
+  content: url(../../img/q.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 13px;
+  left: 5px;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li .head {
+  width: 660px;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li .head .title {
+  width: 530px;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li .head .time {
+  width: 130px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.consultation-detail .detail-content .detail-left .detail-list ul li .describe {
+  color: #AAAAAA;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .title-text {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .title-text p {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 20px;
+  text-align: center;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .title-text p:before {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .title-text p:after {
+  content: '';
+  background: #1296D6;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-q {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  font-weight: bold;
+  width: 100%;
+  line-height: 30px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-q:before {
+  content: url(../../img/q.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  left: 8px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-a {
+  width: 100%;
+  padding-top: 5px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-a:before {
+  content: url(../../img/an.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  left: 8px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-a .a-text {
+  width: 100%;
+  background: #f3fafd;
+  font-size: 15px;
+  line-height: 2;
+  position: relative;
+  padding: 10px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .knowledge-a .a-text:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #F3FAFD;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+.consultation-detail .detail-content .detail-left .detail-knowledge .from {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  color: #1296D6;
+  font-size: 13px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.consultation-detail .detail-content .detail-right {
+  width: 280px;
+  float: right;
+  height: 300px;
+}
+.consultation-detail .detail-content .detail-right .knowledge-count {
+  height: 120px;
+  background-image: url(../../img/consultation/knowledge-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.consultation-detail .detail-content .detail-right .knowledge-count #count {
+  position: absolute;
+  color: #ff1d00;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 20px;
+  right: 0;
+  width: 83px;
+}
+.consultation-detail .detail-content .detail-right .news-box {
+  width: 100%;
+  height: 360px;
+  display: block;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-title {
+  height: 30px;
+  line-height: 30px;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-title .title-text {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-title .more {
+  float: right;
+  font-size: 13px;
+  color: #C1C1C1;
+  cursor: pointer;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-img {
+  width: 100%;
+  height: 60px;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-img img {
+  width: 100%;
+  height: 60px;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-list {
+  width: 100%;
+  height: 220px;
+  box-sizing: border-box;
+  list-style: none;
+  margin-top: 10px;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-list li {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  font-size: 13px;
+  cursor: pointer;
+  border-bottom: 1px solid #C1C1C1;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-list li:before {
+  content: url(../../img/icon4.png);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-list li .item-title {
+  display: inline-block;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.consultation-detail .detail-content .detail-right .news-box .box-list li .item-time {
+  display: inline-block;
+  width: 75px;
+  float: right;
+}

@@ -1,0 +1,243 @@
+//案件评价样式
+.pj-box {
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #cccccc;
+    font-size: 13px;
+    position: absolute;
+    background: #fff;
+    //头部
+    .top-box {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 40px;
+        }
+        .tit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: -5px;
+        }
+        .tit-word {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .title-line {
+            width: 100px;
+            height: 3px;
+            background: #fffcfd;
+            display: block;
+            margin-top: 3px;
+        }
+        .close-btn {
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #FFFFFF;
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            &:hover {
+                background: #E0001A;
+            }
+        }
+    }
+    //内容部分
+    .pj-content {
+        padding: 0px 48px;
+        box-sizing: border-box;
+        .starBox {
+            .star {
+                margin-top: 10px;
+                margin-bottom: 25px;
+                .name {
+                    display: inline-block;
+                    p {
+                        width: 213px;
+                        height: 25px;
+                        line-height: 20px;
+                        text-align: left;
+                        margin: 0;
+                        color: #1296d6;
+                        span {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .star-list {
+                    height: 50px;
+                    text-align: center;
+                    //margin-top: 0px;
+                    margin-right: 30px;
+                    float: right;
+                    span {
+                        display: inline-block;
+                        margin-right: 5px;
+                        width: 24px;
+                        height: 24px;
+                        &.active {
+                            background: url(../img/fy/active.png);
+                        }
+                        &.unactive {
+                            background: url(../img/fy/unactive.png);
+                        }
+                    }
+                }
+                textarea {
+                    width: 380px;
+                    height: 65px;
+                    border: 1px solid #CCCCCC;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    margin-top: -15px;
+                    resize: none;
+                }
+            }
+        }
+    }
+    .bottom {
+        margin-bottom: 15px;
+        .line {
+            width: 500px;
+            border: 1px solid #1296d6;
+            /* margin-left: -5px; */
+            display: block;
+            margin: 0px 0 15px -2px;
+        }
+        .submit {
+            background: #1597d2;
+            color: #fff;
+            margin-left: 215px;
+            width: 75px;
+            height: 26px;
+            line-height: 26px;
+            display: inline-block;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+//留言咨询评价样式
+.pjbox {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #cccccc;
+    font-size: 13px;
+    position: absolute;
+    background: #fff;
+    //头部
+    .tit-box {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 40px;
+        }
+        .tit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: -5px;
+        }
+        .tit-word {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .title-line {
+            width: 100px;
+            height: 3px;
+            background: #fffcfd;
+            display: block;
+            margin-top: 3px;
+        }
+        .close-btn {
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: #FFFFFF;
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            &:hover {
+                background: #E0001A;
+            }
+        }
+    }
+    //内容部分
+    .pj-content {
+        padding: 0px 48px;
+        box-sizing: border-box;
+        .q-t-half {
+            p {
+                width: 213px;
+                height: 25px;
+                line-height: 20px;
+                text-align: left;
+                color: #1296d6;
+            }
+            textarea {
+                width: 310px;
+                height: 60px;
+                border: 1px solid #CCCCCC;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                resize: none;
+            }
+            .star-list {
+                height: 50px;
+                text-align: center;
+                margin-top: -25px;
+                span {
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: 24px;
+                    height: 24px;
+                    &.active {
+                        background: url(../img/fy/active.png);
+                    }
+                    &.unactive {
+                        background: url(../img/fy/unactive.png);
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        margin-bottom: 15px;
+        .line {
+            width: 500px;
+            border: 1px solid #1296d6;
+            /* margin-left: -5px; */
+            display: block;
+            margin: 0px 0 15px -2px;
+        }
+        .submit {
+            background: #1597d2;
+            color: #fff;
+            margin-left: 115px;
+            width: 75px;
+            height: 26px;
+            line-height: 26px;
+            display: inline-block;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

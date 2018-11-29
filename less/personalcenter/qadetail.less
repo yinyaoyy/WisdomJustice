@@ -1,0 +1,250 @@
+.sec-detail {
+    display: none;
+    min-height: 500px;
+    .btn-list {
+        width: 100%;
+        height: 30px;
+        button {
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+            background: #1296D6;
+            color: #FFFFFF;
+            float: right;
+            border: none;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+    .detail-q {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 20px;
+        position: relative;
+        border-bottom: 2px solid #1296d6;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        &:before {
+            content: url(../img/q.png);
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            top: 5px;
+            left: 8px;
+        }
+        .q-title {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 2;
+        }
+        .q-msg {
+            font-size: 13px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            line-height: 2;
+            padding-right: 80px;
+        }
+        .q-time {
+            font-size: 13px;
+            text-align: right;
+        }
+    }
+    .qa-box {
+        .a-msg {
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 40px;
+            padding-right: 80px;
+            position: relative;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            &:before {
+                content: url(../img/an.png);
+                position: absolute;
+                top: 5px;
+                left: 0px;
+                color: #1296D6;
+                border-radius: 4px;
+                text-align: center;
+                width: 50px;
+                height: 22px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            .pj-btn {
+                position: absolute;
+                top: 5px;
+                right: 8px;
+                z-index: 19890125;
+                color: #1296D6;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 20px;
+                cursor: pointer;
+                p {
+                    font-size: 13px;
+                }
+            }
+            .name {
+                height: 40px;
+                line-height: 40px;
+                font-size: 13px;
+                color: #1296D6;
+                position: relative;
+            }
+            .msg {
+                font-size: 13px;
+                line-height: 2;
+            }
+        }
+        .qa-closely {
+            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 13px;
+            padding-bottom: 20px;
+            .closely-q {
+                position: relative;
+                box-sizing: border-box;
+                padding-left: 100px;
+                padding-right: 150px;
+                position: relative;
+                min-height: 26px;
+                margin-bottom: 20px;
+                &:before {
+                    content: '追问';
+                    width: 40px;
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                    height: 20px;
+                    line-height: 20px;
+                    border: 1px solid #e1001a;
+                    border-radius: 3px;
+                    position: absolute;
+                    top: -2px;
+                    left: 50px;
+                    font-size: 13px;
+                    color: #E1001A;
+                }
+                .closely-time {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    float: right;
+                    font-size: 13px;
+                    text-align: right;
+                    line-height: 2;
+                }
+            }
+            .closely-a {
+                position: relative;
+                box-sizing: border-box;
+                padding-left: 100px;
+                padding-right: 150px;
+                position: relative;
+                min-height: 26px;
+                margin-bottom: 20px;
+                &:before {
+                    content: '追答';
+                    width: 40px;
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                    height: 20px;
+                    line-height: 20px;
+                    border: 1px solid #29a0da;
+                    border-radius: 3px;
+                    position: absolute;
+                    top: 0px;
+                    left: 50px;
+                    font-size: 13px;
+                    color: #29a0da;
+                }
+                .closely-time {
+                    position: absolute;
+                    top: -5px;
+                    right: 0;
+                    float: right;
+                    font-size: 13px;
+                    text-align: right;
+                    line-height: 2;
+                }
+            }
+        }
+        .detail-thumbs {
+            padding: 20px 0;
+            border-bottom: 2px solid #1296D6;
+            text-align: right;
+            font-size: 13px;
+            .re-time {
+                display: inline-block;
+                margin-right: 15px;
+            }
+            #good {
+                display: inline-block;
+                margin-right: 15px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+            #diss {
+                display: inline-block;
+                margin-right: 15px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+            .closely-btn {
+                display: inline-block;
+                background: transparent;
+                margin-right: 15px;
+                border: 1px solid #1296D6;
+                color: #1296D6;
+                border-radius: 4px;
+                text-align: center;
+                width: 50px;
+                height: 22px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            .reClosely {
+                position: relative;
+                width: 900px;
+                margin-top: 20px;
+                height: 80px;
+                display: none;
+                .closelyTextarea {
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    resize: none;
+                    padding: 5px 100px 5px 5px;
+                }
+                .closelyTextareaBtn {
+                    position: absolute;
+                    display: inline-block;
+                    background: transparent;
+                    margin-right: 15px;
+                    border: 1px solid #1296D6;
+                    color: #1296D6;
+                    border-radius: 4px;
+                    text-align: center;
+                    width: 50px;
+                    height: 22px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    top: 30px;
+                    right: 0px;
+                }
+            }
+        }
+    }
+}

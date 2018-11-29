@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>12348锡林郭勒法网</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/components/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/components/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/components/page/css/layui.css" />
+		<script src="js/components/page/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/classic.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/legalAidFastForm.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<form class="complaint-box layui-form" action="">
+			<div class="title-box">
+				<div class="title">
+					<span class="title-word">法律服务快速登记表</span>
+					<span class="title-line"></span>
+				</div>
+				<img src="img/lr-title.png">
+				<div class="close-btn">x</div>
+			</div>
+			<div class="complaint-content">
+				<div class="p-user">
+					<ul>
+						<li>
+							<div class="title">姓名</div><input type="text" id="fastName" />
+						</li>
+						<li>
+							<div class="title">手机号码</div><input type="text" id="fastPhone" />
+						</li>
+						<li>
+							<div class="title">案件类别</div>
+							<select lay-ignore name="" id="fastArear" class="area"></select>
+						</li>
+						<li>
+							<div class="title">案件类型</div>
+							<select lay-ignore name="" id="fastArea" class="town"></select>
+						</li>
+						<li class="fastArear">
+							<div class="title">案件标题</div>
+							<input type="text" id="fastTitle" class="fastTitle"/>
+						</li>
+						<li class="fastArear">
+							<div class="title">案发地区</div>
+							<select lay-ignore name="" class="area" id="fastAread"></select>
+						</li>
+						
+						<li>
+						<p>案发简要说明</p>
+					<textarea id="fastContentId" class="fastContent" name="" rows="" cols=""></textarea>
+					</li>
+					</ul>
+					
+				</div>
+				<div class="bottom">
+					<button type="submit" class="submit" id="fastSubmitBtn" lay-submit lay-filter="submitComplaint">快速登记</button>
+				</div>
+			</div>
+	</body>
+
+</html>

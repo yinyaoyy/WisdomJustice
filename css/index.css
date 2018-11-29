@@ -1,0 +1,786 @@
+.search-box-banner {
+  width: 100%;
+  height: 622px;
+  background: url(../img/bg1.png);
+  background-size: 100% 622px;
+  border-top: 1px solid transparent;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.search-box-banner .search-box {
+  width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 250px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+.search-box-banner .search-box .typeList {
+  width: 100%;
+  height: 25px;
+}
+.search-box-banner .search-box .typeList li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px 5px;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+}
+.search-box-banner .search-box .typeList li.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.search-box-banner .search-box .typeList li .active-triangle {
+  display: block;
+  position: absolute;
+  background: url(../img/triangle.png);
+  width: 15px;
+  height: 10px;
+  top: 25px;
+}
+.search-box-banner .search-box .search-control {
+  border: 2px solid #1296D6;
+  margin-top: 10px;
+  height: 40px;
+}
+.search-box-banner .search-box .search-control .search-bar {
+  border: none;
+  background: transparent;
+  width: 646px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.search-box-banner .search-box .search-control .search-btn {
+  width: 100px;
+  border: none;
+  float: right;
+  text-align: center;
+  box-sizing: border-box;
+  height: 40px;
+  background: #1296D6;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.search-box-banner .search-box .search-control .search-btn img {
+  margin-top: 6px;
+}
+.index-nav-list {
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+.index-nav-list li {
+  height: 228px;
+  width: 216px;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.index-nav-list li img {
+  display: block;
+  margin: 15px auto 0;
+  width: 200px;
+  height: 211px;
+}
+.index-nav-list li h5 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+}
+.index-nav-list li p {
+  color: #888888;
+  font-size: 12px;
+  margin: 5px auto;
+}
+.index-nav-list li:hover img {
+  -webkit-transition: -webkit-transform 0.7s ease-out;
+  -moz-transition: -moz-transform 0.7s ease-out;
+  transition: transform 0.7s ease-out;
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+}
+.data-news {
+  background-image: url(../img/bg2.png);
+  background-size: 100% 525px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 800px;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.data-news .news-content {
+  width: 900px;
+  margin: 270px auto 0;
+  height: 500px;
+  background: #FFFFFF;
+  box-shadow: 3px 3px 20px #333;
+}
+.data-news .news-content .policy-release,
+.data-news .news-content .service-dynamics {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.data-news .news-content .policy-release .news-head,
+.data-news .news-content .service-dynamics .news-head {
+  height: 60px;
+  line-height: 60px;
+}
+.data-news .news-content .policy-release .news-head .news-title,
+.data-news .news-content .service-dynamics .news-head .news-title {
+  float: left;
+  height: 100%;
+}
+.data-news .news-content .policy-release .news-head .news-title i,
+.data-news .news-content .service-dynamics .news-head .news-title i {
+  overflow: hidden;
+  width: 80px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.data-news .news-content .policy-release .news-head .news-title i img,
+.data-news .news-content .service-dynamics .news-head .news-title i img {
+  height: 34px;
+  margin: 10px 10px 0 20px;
+}
+.data-news .news-content .policy-release .news-head .news-title span,
+.data-news .news-content .service-dynamics .news-head .news-title span {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-left: -10px;
+  color: #1296D6;
+}
+.data-news .news-content .policy-release .news-head .more,
+.data-news .news-content .service-dynamics .news-head .more {
+  height: 100%;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.data-news .news-content .policy-release .news-list,
+.data-news .news-content .service-dynamics .news-list {
+  width: 100%;
+  margin-top: 10px;
+}
+.data-news .news-content .policy-release .news-list li,
+.data-news .news-content .service-dynamics .news-list li {
+  padding-left: 45px;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+}
+.data-news .news-content .policy-release .news-list li:before,
+.data-news .news-content .service-dynamics .news-list li:before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 2px;
+  left: 20px;
+}
+.data-news .news-content .policy-release .news-list li i,
+.data-news .news-content .service-dynamics .news-list li i {
+  display: inline-block;
+  width: 260px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+}
+.data-news .news-content .policy-release .news-list li i.time,
+.data-news .news-content .service-dynamics .news-list li i.time {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  width: 75px;
+  display: inline-block;
+}
+.data-news .news-content .policy-release .dotted-line,
+.data-news .news-content .service-dynamics .dotted-line {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+.data-news .news-content .service-dynamics .news-list li {
+  padding-left: 55px;
+}
+.data-news .news-content .service-dynamics .news-list li:before {
+  left: 30px;
+}
+.consultation {
+  width: 900px;
+  height: 500px;
+  background: #FFFFFF;
+  box-shadow: 3px 3px 20px #333;
+  margin: 10px auto 30px;
+  padding: 20px;
+}
+.consultation .consultation-service,
+.consultation .consultation-area {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.consultation .consultation-service .consultation-head,
+.consultation .consultation-area .consultation-head {
+  height: 60px;
+  line-height: 60px;
+}
+.consultation .consultation-service .consultation-head .consultation-title,
+.consultation .consultation-area .consultation-head .consultation-title {
+  float: left;
+  height: 100%;
+}
+.consultation .consultation-service .consultation-head .consultation-title i,
+.consultation .consultation-area .consultation-head .consultation-title i {
+  overflow: hidden;
+  width: 80px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.consultation .consultation-service .consultation-head .consultation-title i img,
+.consultation .consultation-area .consultation-head .consultation-title i img {
+  height: 34px;
+  margin: 10px 10px 0 20px;
+}
+.consultation .consultation-service .consultation-head .consultation-title span,
+.consultation .consultation-area .consultation-head .consultation-title span {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-left: -10px;
+  color: #1296D6;
+}
+.consultation .consultation-service .consultation-head .consultation-title .num,
+.consultation .consultation-area .consultation-head .consultation-title .num {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 75px;
+  margin-top: -15px;
+}
+.consultation .consultation-service .consultation-head .consultation-title .num #totalCount,
+.consultation .consultation-area .consultation-head .consultation-title .num #totalCount {
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  display: inline-block;
+  vertical-align: inherit;
+  color: #E4393C;
+  margin-left: 0;
+}
+.consultation .consultation-service .consultation-head .more,
+.consultation .consultation-area .consultation-head .more {
+  height: 100%;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.consultation .consultation-service .consultation-list,
+.consultation .consultation-area .consultation-list {
+  width: 100%;
+  margin-top: 10px;
+}
+.consultation .consultation-service .consultation-list li,
+.consultation .consultation-area .consultation-list li {
+  padding-left: 45px;
+  padding-right: 20px;
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+}
+.consultation .consultation-service .consultation-list li:before,
+.consultation .consultation-area .consultation-list li:before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 2px;
+  left: 20px;
+}
+.consultation .consultation-service .consultation-list li i,
+.consultation .consultation-area .consultation-list li i {
+  display: inline-block;
+  width: 240px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 13px;
+}
+.consultation .consultation-service .consultation-list li i.time,
+.consultation .consultation-area .consultation-list li i.time {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  width: 130px;
+  display: inline-block;
+}
+.consultation .consultation-service .dotted-line,
+.consultation .consultation-area .dotted-line {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+.consultation .consultation-service .flag,
+.consultation .consultation-area .flag {
+  background: url(../img/flag.png);
+  width: 96px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: center;
+  float: right;
+  margin-top: 20px;
+}
+.consultation .consultation-service .phone,
+.consultation .consultation-area .phone {
+  width: 200px;
+  height: 200px;
+  background: url(../img/phone-body.png) 50% 50% no-repeat;
+  margin: 80px auto 0;
+  cursor: pointer;
+}
+.consultation .consultation-service .phone .phone-head,
+.consultation .consultation-area .phone .phone-head {
+  width: 200px;
+  height: 100px;
+  margin-left: 7px;
+  transform-origin: 100px 100px;
+  animation: leftRight 3s infinite;
+  -webkit-animation: leftRight 3s infinite;
+}
+.consultation .consultation-service .phone .phone-text,
+.consultation .consultation-area .phone .phone-text {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding-left: 7px;
+  margin-top: 84px;
+  color: #222222;
+}
+.consultation .consultation-service .attention,
+.consultation .consultation-area .attention {
+  width: 360px;
+  margin: 30px auto 0;
+}
+.consultation .consultation-service .attention .title,
+.consultation .consultation-area .attention .title {
+  color: #1296D6;
+  font-size: 16px;
+}
+.consultation .consultation-service .attention .attention-list,
+.consultation .consultation-area .attention .attention-list {
+  width: 100%;
+  margin-top: 10px;
+}
+.consultation .consultation-service .attention .attention-list li,
+.consultation .consultation-area .attention .attention-list li {
+  padding-left: 25px;
+  padding-right: 20px;
+  position: relative;
+  line-height: 24px;
+  font-size: 12px;
+}
+.consultation .consultation-service .attention .attention-list li::before,
+.consultation .consultation-area .attention .attention-list li::before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+@keyframes leftRight {
+  0% {
+    transform: rotate(-10deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.national-law-service {
+  overflow: hidden;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.national-law-service .left {
+  float: left;
+}
+.national-law-service .left a {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background: url(../img/Service/Service-1.png);
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.national-law-service .right {
+  float: right;
+}
+.national-law-service .right .top {
+  margin-bottom: 6px;
+}
+.national-law-service .right .top a {
+  display: inline-block;
+  height: 195px;
+  width: 181px;
+  background: cover;
+  margin-right: 10px;
+}
+.national-law-service .right .top .flfwts {
+  background: url(../img/Service/Service-7.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.national-law-service .right .top .add1 {
+  background: url(../img/Service/Service-4.png);
+  background-size: 100% 100%;
+}
+.national-law-service .right .top .sfxzalcx {
+  background: url(../img/Service/Service-6.png);
+  background-size: 100% 100%;
+}
+.national-law-service .right .top .add2 {
+  background: url(../img/Service/Service-5.png);
+  background-size: 100% 100%;
+}
+.national-law-service .right .bottom a {
+  display: inline-block;
+  height: 195px;
+  width: 376px;
+  background: cover;
+  margin-right: 10px;
+}
+.national-law-service .right .bottom .qgls {
+  background: url(../img/Service/Service-2.png);
+  background-size: 100% 100%;
+}
+.national-law-service .right .bottom .qgsfks {
+  background: url(../img/Service/Service-3.png);
+  background-size: 100% 100%;
+}
+.map {
+  background: url(../img/index-bottom-bg.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.map #xmmap {
+  width: 100%;
+  height: 600px;
+}
+.web-link {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-size: 14px;
+  background: #0061ae;
+}
+.web-link .link-wrapper {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.web-link .link-wrapper .title {
+  height: 60px;
+  width: 100px;
+  line-height: 60px;
+  float: left;
+}
+.web-link .link-wrapper select {
+  width: 190px;
+  height: 30px;
+  border: 1px solid #1296D6;
+  float: left;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding-right: 15px;
+  position: relative;
+  padding-left: 10px;
+}
+.web-link .link-wrapper div .triangle {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 10px;
+  top: 10px;
+}
+.web-link .link-wrapper div .triangle p {
+  height: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+#right-fixed-nav {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  width: 60px;
+  height: 450px;
+  background: #1296D6;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#right-fixed-nav li {
+  width: 60px;
+  height: 60px;
+  padding-top: 6px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#right-fixed-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#right-fixed-nav li a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}
+#right-fixed-nav li a p {
+  font-size: 12px;
+  color: #FFFFFF;
+  height: 14px;
+  line-height: 14px;
+}
+#right-fixed-nav li .qrcode {
+  width: 260px;
+  height: 150px;
+  position: absolute;
+  top: -50px;
+  right: 80px;
+  display: none;
+  padding: 10px;
+  background: #FFFFFF;
+}
+#right-fixed-nav li .qrcode .chinese,
+#right-fixed-nav li .qrcode .mongolian {
+  float: left;
+}
+#right-fixed-nav li .qrcode .chinese img,
+#right-fixed-nav li .qrcode .mongolian img {
+  width: 120px;
+  height: 120px;
+}
+#right-fixed-nav li .qrcode .chinese p,
+#right-fixed-nav li .qrcode .mongolian p {
+  color: #000000;
+  text-align: center;
+  font-size: 13px;
+}
+#right-fixed-nav li .qrcode .mongolian {
+  float: right;
+}
+#right-fixed-nav li:hover .qrcode {
+  display: block;
+}
+.quick-box {
+  width: 800px;
+  height: 385px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #cccccc;
+  font-size: 13px;
+  position: absolute;
+  background: #fff;
+  z-index: 19890125;
+}
+.quick-box .title-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.quick-box .title-box img {
+  width: 100%;
+  height: 50px;
+}
+.quick-box .title-box .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.quick-box .title-box .title-word {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.quick-box .title-box .title-line {
+  width: 155px;
+  height: 3px;
+  background: #fffcfd;
+  display: block;
+  margin: 3px auto 0;
+}
+.quick-box .title-box .close-btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.quick-box .title-box .close-btn:hover {
+  background: #E0001A;
+}
+.quick-box .quick-content {
+  padding: 20px 45px;
+  box-sizing: border-box;
+}
+.quick-box .quick-content p {
+  margin: 5px 0;
+}
+.quick-box .quick-content .p-user {
+  width: 100%;
+}
+.quick-box .quick-content .p-user ul {
+  list-style: none;
+  width: 100%;
+  padding: 6px 0;
+}
+.quick-box .quick-content .p-user ul li {
+  width: 47%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-left: 21px;
+}
+.quick-box .quick-content .p-user ul li img {
+  margin-left: -73px;
+  position: absolute;
+  margin-top: 9px;
+}
+.quick-box .quick-content .p-user ul .title {
+  float: left;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.quick-box .quick-content .p-user ul .fastContent {
+  width: 705px;
+  height: 80px;
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+.quick-box .quick-content .p-user ul input,
+.quick-box .quick-content .p-user ul select {
+  width: 270px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid #CCCCCC;
+}
+.quick-box .word {
+  border-bottom: 2px solid #66bbd7;
+  text-align: center;
+}
+.quick-box .bottom {
+  padding: 10px 230px;
+  text-align: center;
+}
+.quick-box .bottom button {
+  margin-top: -5px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+}
+.quick-box .bottom .submit {
+  background: #1597d2;
+  color: #fff;
+}
+.leftpeople {
+  position: fixed;
+  left: 10px;
+  top: 210px;
+}
+.leftpeople .peopleimg img {
+  width: 69%;
+}
+.leftpeople .word {
+  width: 120px;
+  height: 140px;
+  border: 1px solid #009dff;
+  position: absolute;
+  left: 85px;
+  top: -65px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #fff;
+}
+.leftpeople .word span {
+  font-size: 13px;
+  line-height: 1.2;
+}
+.leftpeople .word input {
+  width: 90px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 15px;
+  background: #009dff;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0;
+  border: 0;
+}

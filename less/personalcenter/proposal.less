@@ -1,0 +1,283 @@
+.complaint-box {
+    width: 800px;
+    height: 615px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #cccccc;
+    font-size: 13px;
+    position: absolute;
+    background: #fff;
+    z-index: 19890125;
+    //头部
+    .title-box {
+        width: 100%;
+        height: 50px;
+        //      line-height: 50px;
+        //      text-align: center;
+        position: relative;
+        img {
+            width: 100%;
+            height: 50px;
+        }
+        .title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title-word {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .title-line {
+            width: 100px;
+            height: 3px;
+            background: #fffcfd;
+            display: block;
+            margin-top: 3px;
+        }
+        .close-btn {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #FFFFFF;
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            &:hover {
+                background: #E0001A;
+            }
+        }
+    }
+    //内容部分
+    .complaint-content {
+        padding: 20px 48px;
+        box-sizing: border-box;
+        p {
+            margin: 5px 0;
+        }
+        //投诉人,被投诉人
+        .p-user,
+        .b-user {
+            width: 100%;
+            ul {
+                list-style: none;
+                width: 100%;
+                padding: 6px 0;
+                .org {
+                    float: left;
+                }
+                li {
+                    width: 50%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    .search-select {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 7px;
+                            right: 4px;
+                            z-index: 19890125;
+                            width: 11px;
+                            height: 13px;
+                            background-image: url(../img/select.png);
+                            background-size: 85% 100%;
+                            background-repeat: no-repeat;
+                        }
+                        input {
+                            outline: none;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 30px;
+                            font-size: 13px;
+                            border: 1px solid #CCCCCC;
+                            padding: 0 10px;
+                            position: absolute;
+                            line-height: 30px;
+                            background: #FFFFFF;
+                        }
+                        ul {
+                            display: none;
+                            border: 1px solid #d5d5d5;
+                            width: 100%;
+                            position: absolute;
+                            top: 30px;
+                            overflow: hidden;
+                            background-color: #fff;
+                            max-height: 100px;
+                            overflow-y: auto;
+                            border-top: 0;
+                            z-index: 20160804;
+                            box-sizing: border-box;
+                            li {
+                                width: 100%;
+                                height: 26px;
+                                line-height: 26px;
+                                overflow: hidden;
+                                padding: 0 10px;
+                                margin: 0;
+                                cursor: pointer;
+                                font-size: 13px;
+                                display: block;
+                                &.on {
+                                    background: #1296D6;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                    .title {
+                        //display: inline-block;
+                        float: left;
+                        width: 67px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: left;
+                    }
+                    input,
+                    select {
+                        width: 275px;
+                        height: 30px;
+                        //line-height: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: 0 5px;
+                        border: 1px solid #CCCCCC;
+                    }
+                    select {
+                        //margin-left: -4px;
+                    }
+                    .orgDiv {
+                        display: inline-block;
+                        width: 275px;
+                        height: 30px;
+                        line-height: 30px;
+                        #orgUl {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .line {
+                width: 100%;
+                height: 2px;
+                background: #66bbd7;
+                display: block;
+            }
+        }
+        //投诉标题
+        .q-t {
+            .q-t-title {
+                width: 100%;
+                padding: 6px 0;
+                .q-t-half {
+                    width: 50%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    p {
+                        float: left;
+                        width: 67px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    input {
+                        width: 275px;
+                        height: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: 0 5px;
+                        border: 1px solid #CCCCCC;
+                    }
+                    select {
+                        width: 275px;
+                        height: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: 0 5px;
+                        border: 1px solid #CCCCCC;
+                    }
+                }
+            }
+            textarea {
+                width: 705px;
+                height: 80px;
+                border: 1px solid #CCCCCC;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                resize: none;
+            }
+        }
+        //验证码
+        .identify {
+            border-bottom: 2px solid #66bbd7;
+            margin-top: 10px;
+            padding-bottom: 20px;
+            label {
+                height: 30px;
+                line-height: 30px;
+                width: 70px;
+                display: inline-block;
+            }
+            input {
+                width: 280px;
+                height: 30px;
+                line-height: 30px;
+                margin-right: 25px;
+                border: 1px solid #CCCCCC;
+                padding-left: 10px;
+                box-sizing: border-box;
+            }
+            img {
+                width: 100px;
+                height: 30px;
+                vertical-align: middle;
+            }
+            .anony-box {
+                float: right;
+                padding-right: 5px;
+                padding-top: 5px;
+                .anony {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .word {
+            border-bottom: 2px solid #66bbd7;
+            text-align: center;
+        }
+        .bottom {
+            padding: 10px 230px;
+            text-align: center;
+            button {
+                margin-top: 10px;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                border: none;
+                text-align: center;
+            }
+            .submit {
+                background: #1597d2;
+                color: #fff;
+            }
+            .reset {
+                background: #eeeeef;
+                color: #828283;
+            }
+        }
+    }
+}

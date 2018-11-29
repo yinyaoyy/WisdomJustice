@@ -1,0 +1,297 @@
+.nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #1296D6;
+  margin-top: 122px;
+}
+.nav .nav-list {
+  width: 100%;
+  list-style: none;
+}
+.nav .nav-list li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  padding: 0 15px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.nav .nav-list li:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #C1C1C1;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+.nav .nav-list li:last-child:after {
+  content: '';
+  display: none;
+}
+.nav .nav-list li a {
+  color: #FFFFFF;
+}
+.nav .nav-list li.active:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 36px;
+  z-index: 19890125;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.banner {
+  width: 100%;
+  height: 360px;
+  background-image: url(../img/mediation/bg1.png);
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 156px;
+  position: relative;
+}
+.banner .lawyer {
+  overflow: hidden;
+  width: 100%;
+  font-size: 13px;
+}
+.banner .lawyer .lawyer-detail {
+  margin: 170px auto auto;
+  width: 1000px;
+  height: 520px;
+  background-image: url(../img/mediation/rt-bg2.png);
+  background-size: 100% 360px;
+  background-repeat: no-repeat;
+}
+.banner .lawyer .lawyer-detail .lawyer-img {
+  width: 300px;
+  height: 100%;
+  float: left;
+}
+.banner .lawyer .lawyer-detail .lawyer-img img {
+  width: 170px;
+  margin: 60px auto 0;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg {
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-name {
+  height: 40px;
+  margin-left: -15px;
+  position: relative;
+  text-align: left;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-name:before {
+  content: url(../img/mediation/line.png);
+  position: absolute;
+  width: 4px;
+  height: 29px;
+  top: 5px;
+  left: -15px;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-name #name {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-name #type {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: -15px;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-msg {
+  float: right;
+  margin-left: 155px;
+  margin-top: -45px;
+  width: 220px;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-msg ul {
+  width: 100%;
+  overflow: hidden;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-msg ul li {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 40px;
+}
+.banner .lawyer .lawyer-detail .lawyer-detail-msg .lawyer-msg ul li .title {
+  color: #1296D6;
+}
+.lawyer-info {
+  width: 100%;
+  font-size: 13px;
+  padding-bottom: 60px;
+}
+.lawyer-info .info-list {
+  width: 999px;
+  margin: 0 auto 30px;
+  border-bottom: 3px solid #1296D6;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.lawyer-info .info-list .list-title {
+  width: 100%;
+  height: 46px;
+  line-height: 58px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.lawyer-info .info-list .list-title .title-type {
+  display: inline-block;
+  margin-right: 36px;
+}
+.lawyer-info .info-list .list-title .title-type #mydtype {
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+}
+.lawyer-info .info-list .list-title .title-star {
+  display: inline-block;
+  margin-right: 70px;
+}
+.lawyer-info .info-list .list-title .title-star #star {
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+}
+.lawyer-info .info-list .list-title .title-time {
+  display: inline-block;
+  margin-right: 20px;
+}
+.lawyer-info .info-list .list-title .title-time #timeSole {
+  width: 180px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+}
+.lawyer-info .info-list .list-title .search {
+  display: inline-block;
+  width: 60px;
+  background: #1296d6;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.lawyer-info .info-list .info-box {
+  width: 997px;
+  margin-top: 10px;
+  position: relative;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+.lawyer-info .info-list .info-box .table {
+  width: 100%;
+}
+.lawyer-info .info-list .info-box .table tr th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 35px;
+  line-height: 35px;
+  border-right: 1px solid #CCCCCC;
+  font-weight: 800;
+}
+.lawyer-info .info-list .info-box .table tr th:nth-child(6) {
+  border-right: none;
+}
+.lawyer-info .info-list .info-box .table tr .pj-content {
+  position: relative;
+  cursor: pointer;
+}
+.lawyer-info .info-list .info-box .table tr .pj-content .proposal {
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.lawyer-info .info-list .info-box .table tr .pj-content em {
+  width: 300px;
+  /* height: 100px; */
+  position: absolute;
+  text-align: center;
+  font-style: normal;
+  display: none;
+  background-color: rgba(20, 20, 20, 0.7);
+  color: #FFFFFF;
+  z-index: 2000000000000;
+  padding: 19px 20px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.lawyer-info .info-list .info-box .table tr td {
+  height: 20px;
+  line-height: 20px;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+}
+.lawyer-info .info-list .info-box .table tr td .detail {
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid blue;
+  border-radius: 7px;
+  font-size: 12px;
+  color: blue;
+  margin-left: 10px;
+}
+.lawyer-info .info-list .info-box .table tr td .star-list {
+  position: relative;
+  width: 125px;
+  text-align: center;
+  margin-top: 20px;
+  display: table-cell;
+  height: 15px;
+}
+.lawyer-info .info-list .info-box .table tr td .star-list img {
+  position: absolute;
+  display: block;
+  vertical-align: middle;
+}
+.lawyer-info .info-list .info-box .table tr td .star-list span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.lawyer-info .info-list .info-box .table tr td .star-list span.active {
+  background: url(../../img/fy/active.png);
+}
+.lawyer-info .info-list .info-box .table tr td .star-list span.unactive {
+  background: url(../../img/fy/unactive.png);
+}
+.lawyer-info .info-list .info-box .table tr td:nth-child(6) {
+  border-right: none;
+}
+.lawyer-info .info-list .info-box .table tr td:nth-child(5) {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

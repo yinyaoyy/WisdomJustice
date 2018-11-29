@@ -1,0 +1,40 @@
+.index-nav-list {
+    margin: 0 auto 20px;
+    overflow: hidden;
+    li {
+        height: 228px;
+        width: 216px;
+        float: left;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+        img {
+            display: block;
+            margin: 15px auto 0;
+            width: 200px;
+            height: 211px;
+        }
+        h5 {
+            margin-top: 10px;
+            margin-bottom: 8px;
+            color: #000000;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p {
+            color: #888888;
+            font-size: 12px;
+            margin: 5px auto;
+        }
+        &:hover {
+            img {
+                -webkit-transition: -webkit-transform 0.7s ease-out;
+                -moz-transition: -moz-transform 0.7s ease-out;
+                transition: transform 0.7s ease-out;
+                transform: rotateY(360deg);
+                -webkit-transform: rotateY(360deg);
+                -moz-transform: rotateY(360deg);
+            }
+        }
+    }
+}

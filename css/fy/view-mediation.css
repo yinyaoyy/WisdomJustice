@@ -1,0 +1,42 @@
+.process-bar {
+  position: relative;
+  width: 600px;
+  height: 70px;
+  margin: 0 auto;
+}
+.process-bar .process-item {
+  width: 20px;
+  height: 20px;
+  background: #1296D6;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  z-index: 19890125;
+}
+.process-bar .process-item.finished {
+  background: #6bc72e;
+}
+.process-bar .process-item.now {
+  background: #E4393C;
+}
+.process-bar .process-item .item-desc {
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  width: 85px;
+  text-align: center;
+}
+.process-bar .process-line {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 17px;
+  background: #1296D6;
+}
+#iframe {
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}

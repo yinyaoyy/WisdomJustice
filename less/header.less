@@ -1,0 +1,124 @@
+.header {
+    width: 100%;
+    height: 122px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 19890125;
+    .header-wrapper {
+        width: 1190px;
+        margin: 0 auto;
+        .logo {
+            margin-top: 20px;
+            float: left;
+            img {
+                //              width: 80px;
+                height: 80px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span {
+                height: 80px;
+                line-height: 80px;
+                color: #fff;
+                font-size: 40px;
+                vertical-align: middle;
+            }
+        }
+        .user-login-list {
+            float: right;
+            margin-top: 50px;
+            a {
+                height: 20px;
+                line-height: 20px;
+                background: #1296D6;
+                color: #FFFFFF;
+                //              border-radius: 4px;
+                text-decoration: none;
+                padding: 6px 8px;
+                font-size: 13px;
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+            .login-user {
+                color: #1296D6;
+                height: 20px;
+                line-height: 20px;
+                display: inline-block;
+                font-size: 13px;
+            }
+            .personalcenter {
+                color: #1296D6;
+                height: 20px;
+                line-height: 20px;
+                display: inline-block;
+                font-size: 13px;
+                background: none;
+                padding: 0;
+                margin-left: 20px;
+                cursor: pointer;
+                &:hover {
+                    color: #1296D6;
+                }
+            }
+            #logout {
+                color: #1296D6;
+                height: 20px;
+                line-height: 20px;
+                display: inline-block;
+                font-size: 13px;
+                background: none;
+                padding: 0;
+                margin-left: 20px;
+                cursor: pointer;
+                &:hover {
+                    color: #1296D6;
+                }
+            }
+            &.index-login {
+                .login-user {
+                    color: #FFFFFF;
+                }
+                .personalcenter {
+                    color: #FFFFFF;
+                    &:hover {
+                        color: #FFFFFF;
+                    }
+                }
+                #logout {
+                    color: #FFFFFF;
+                    &:hover {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .mongolian {
+            margin-top: 50px;
+            float: right;
+            color: #1296D6;
+            border: none;
+            margin-left: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 13px;
+            a {
+                height: 20px;
+                line-height: 20px;
+                background: #1296D6;
+                color: #FFFFFF;
+                font-size: 13px;
+                padding: 9px 69px;
+                background: url(../img/mongolian.png);
+                background-repeat: no-repeat;
+            }
+            &.mogolian-index {
+                a {
+                    background: url(../img/mongolian-w.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

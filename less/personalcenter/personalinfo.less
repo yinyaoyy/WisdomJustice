@@ -1,0 +1,91 @@
+#personal-info {
+    table {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 13px;
+        thead {
+            th {
+                background-color: #ddf2fb;
+                color: #000000;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #CCCCCC;
+            }
+        }
+        tbody {
+            td {
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #CCCCCC;
+                box-sizing: border-box;
+                padding: 5px 20px;
+                text-align: center;
+                width: 300px;
+                &.title-text {
+                    text-align: center;
+                    width: 150px;
+                    &.required {
+                        &:before {
+                            content: "⁎";
+                            display: inline-block;
+                            width: 5px;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #e4393c;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                button {
+                    width: 50px;
+                    height: 24px;
+                    line-height: 24px;
+                    background: #1296D6;
+                    border: none;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+                input[type='text'] {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 13px;
+                    box-sizing: border-box;
+                    padding: 0 5px;
+                }
+                input[type='radio'] {
+                    vertical-align: sub;
+                }
+                select {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 13px;
+                    box-sizing: border-box;
+                    padding: 0 5px;
+                }
+                select.birth {
+                    width: 125px;
+                    &:first-child {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-list {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+        button {
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+            background: #1296D6;
+            color: #FFFFFF;
+            border: none;
+            margin-right: 10px;
+        }
+    }
+}

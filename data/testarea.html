@@ -1,0 +1,67 @@
+<html>
+
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../js/components/select2/select2.min.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/components/select2/select2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<select name="" id="area" style="width: 200px;">
+			<option value=""></option>
+		</select>
+		<select name="" id="town" style="width: 200px;">
+			<option value=""></option>
+		</select>
+		<script type="text/javascript">
+			$(function() {
+				var areaList, townList, selectAreaId;
+				$.get('areaTown.json').done(function(data) {
+					areaList = data;
+				})
+				$("#area").select2({
+					placeholder: "please check area",
+					allowClear: true,
+					data: data
+				}).on("change", function(e) {
+					selectAreaId = $('#area').val();
+					$.each(data, function(i, el) {
+						if(el['id'] == selectAreaId) {
+							townList = el.childList
+						}
+					});
+					console.log(townList)
+				});
+				var selected = $('#area:selected').val();
+				$("#town").select2({
+					placeholder: "please check town",
+					allowClear: true,
+					data: townList
+				}).on("change", function(e) {
+
+				});
+
+				function renderSelectTown(areaId) {
+					var twoTmp = [];
+					for(var j = 0; j < twoselect.length; j++) {
+						if(twoselect[j].parent == parent) {
+							twoTmp.push(twoselect[j])
+						}
+					};
+					if(twoTmp.length != 0) {
+						$("#two").show();
+						select2Show("#levelTwo", twoTmp);
+
+						selectThree(twoTmp[0].cid);
+
+					} else {
+						twoHide();
+						threeHide();
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

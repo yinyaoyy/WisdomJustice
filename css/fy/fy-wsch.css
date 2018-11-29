@@ -1,0 +1,106 @@
+.index-list .list-detail .list-right {
+  width: 660px;
+  margin-left: 40px;
+  box-shadow: none;
+}
+.index-list .list-detail .list-right .filter-search .filter-title {
+  width: 100px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: relative;
+  font-weight: bold;
+}
+.index-list .list-detail .list-right .filter-search .filter-title:before {
+  height: 24px;
+  width: 3px;
+  content: '';
+  background: #1296D6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.index-list .list-detail .list-right .filter-search .filter-title:after {
+  height: 24px;
+  width: 3px;
+  content: '';
+  background: #1296D6;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.index-list .list-detail .list-right .filter-search .filter-content {
+  width: 100%;
+  overflow: hidden;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .filter-item {
+  float: left;
+  box-sizing: border-box;
+  width: 300px;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .filter-item span {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .filter-item input[type="text"] {
+  display: inline-block;
+  width: 200px;
+  height: 26px;
+  line-height: 26px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .filter-item input[type="date"] {
+  display: inline-block;
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .btn-list {
+  float: left;
+  margin-top: 10px;
+}
+.index-list .list-detail .list-right .filter-search .filter-content .btn-list button {
+  padding: 4px 16px;
+  background: #1296D6;
+  color: #FFFFFF;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.index-list .list-detail .list-right .result-table {
+  width: 100%;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+.index-list .list-detail .list-right .result-table thead th {
+  background: #f3fdfe;
+  text-align: center;
+  padding: 10px 0;
+}
+.index-list .list-detail .list-right .result-table thead th.title {
+  width: 250px;
+}
+.index-list .list-detail .list-right .result-table tbody td {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px dotted #f4f4f4;
+}
+.index-list .list-detail .list-right .result-table tbody td.title {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}

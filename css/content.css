@@ -1,0 +1,343 @@
+.content-wrapper {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.model {
+  width: 100%;
+}
+.model .model-title {
+  width: 400px;
+  margin: 10px auto 30px;
+  position: relative;
+}
+.model .model-title .model-title-text {
+  margin: 0 auto;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.model .model-title .model-title-describe {
+  width: 100%;
+  margin: 0 auto;
+  color: #888888;
+  text-align: center;
+  font-size: 14px;
+}
+.model .model-title:after {
+  content: url(../img/line.png);
+  position: absolute;
+  bottom: -30px;
+  left: 160px;
+}
+.model .model-content {
+  width: 100%;
+  overflow: hidden;
+}
+#go-top {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: url(../img/backtop.png) no-repeat center;
+  background-color: #999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  transition: all .3s;
+}
+.alert-main {
+  display: block;
+  position: absolute;
+  z-index: 19890125;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 5px #2B323D;
+}
+.alert-main.regist-main {
+  width: 750px;
+  height: 430px;
+}
+.alert-main.regist-main .regist-left {
+  width: 350px;
+  height: 430px;
+  float: left;
+}
+.alert-main.regist-main .regist-left img {
+  width: 350px;
+  height: 430px;
+}
+.alert-main.regist-main .regist-right {
+  width: 400px;
+  height: 430px;
+  float: right;
+}
+.alert-main.regist-main .regist-right .regist-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #1296D6;
+}
+.alert-main.regist-main .regist-right .regist-title .close {
+  float: right;
+  width: 30px;
+  cursor: pointer;
+}
+.alert-main.regist-main .regist-right .regist-form li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  vertical-align: baseline;
+  margin: 10px 0;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-label {
+  display: inline-block;
+  width: 100px;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-label i {
+  margin-right: 5px;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-label span {
+  vertical-align: middle;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-input {
+  display: inline-block;
+  width: 250px;
+  border: 1px solid #CCCCCC;
+  position: relative;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-input input {
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: none;
+}
+.alert-main.regist-main .regist-right .regist-form li .regist-input .getCode {
+  position: absolute;
+  line-height: 32px;
+  font-size: 14px;
+  color: #222;
+  width: 110px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.alert-main.regist-main .regist-right .regist-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 10px 45px;
+  background: #1296D6;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+.alert-main.login-main,
+.alert-main.service-login-main {
+  display: block;
+  top: 50px;
+  left: 200px;
+  height: 240px;
+  width: 500px;
+}
+.alert-main.login-main .alert-head,
+.alert-main.service-login-main .alert-head {
+  background-image: url(../img/login-title.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.alert-main.login-main .alert-head .alert-title,
+.alert-main.service-login-main .alert-head .alert-title {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  left: 200px;
+  top: -50px;
+}
+.alert-main.login-main .alert-head .alert-title.normal-user,
+.alert-main.service-login-main .alert-head .alert-title.normal-user {
+  background-image: url(../img/login-img-circle.png);
+}
+.alert-main.login-main .alert-head .alert-title.service-user,
+.alert-main.service-login-main .alert-head .alert-title.service-user {
+  background-image: url(../img/service-user.png);
+}
+.alert-main.login-main .alert-head .close,
+.alert-main.service-login-main .alert-head .close {
+  float: right;
+  width: 30px;
+  color: #1296D6;
+  cursor: pointer;
+}
+.alert-main.login-main .alert-body,
+.alert-main.service-login-main .alert-body {
+  width: 100%;
+}
+.alert-main.login-main .alert-body .login-form,
+.alert-main.service-login-main .alert-body .login-form {
+  width: 100%;
+  padding: 30px 40px 0;
+  box-sizing: border-box;
+}
+.alert-main.login-main .alert-body .login-form .login-input,
+.alert-main.service-login-main .alert-body .login-form .login-input {
+  padding-left: 40px;
+  position: relative;
+  margin: 0 auto 5px;
+  width: 80%;
+  border: 1px solid #CCCCCC;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.alert-main.login-main .alert-body .login-form .login-input i,
+.alert-main.service-login-main .alert-body .login-form .login-input i {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+}
+.alert-main.login-main .alert-body .login-form .login-input i img,
+.alert-main.service-login-main .alert-body .login-form .login-input i img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.alert-main.login-main .alert-body .login-form .login-input input,
+.alert-main.service-login-main .alert-body .login-form .login-input input {
+  width: 295px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+}
+.alert-main.login-main .alert-body .login-form .forget-password,
+.alert-main.service-login-main .alert-body .login-form .forget-password {
+  width: 80%;
+  margin: 0 auto 5px;
+  text-align: right;
+}
+.alert-main.login-main .alert-footer,
+.alert-main.service-login-main .alert-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.alert-main.login-main .alert-footer button,
+.alert-main.service-login-main .alert-footer button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+}
+.alert-main.forget-main {
+  height: 280px;
+  width: 660px;
+}
+.alert-main .alert-head {
+  padding: 0 26px;
+  height: 44px;
+  background-image: url(../img/lr-title.png);
+  background-size: contain;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 44px;
+  padding-right: 0;
+}
+.alert-main .alert-head .alert-title {
+  float: left;
+}
+.alert-main .alert-head .alert-close {
+  float: right;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+.alert-main .alert-head .alert-close:hover {
+  background: darkblue;
+}
+.alert-main .alert-body {
+  width: 100%;
+  text-align: center;
+}
+.alert-main .alert-body .forget-form {
+  list-style: none;
+  padding: 26px 80px 0 80px;
+}
+.alert-main .alert-body .forget-form li {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.alert-main .alert-body .forget-form li .regist-label {
+  width: 110px;
+  float: left;
+  width: 96px;
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+}
+.alert-main .alert-body .forget-form li .regist-label i {
+  position: relative;
+  top: 4px;
+  margin-right: 4px;
+  color: #e84309;
+  font-size: 18px;
+}
+.alert-main .alert-body .forget-form li .regist-label.forget-password {
+  float: right;
+  margin-right: 55px;
+}
+.alert-main .alert-body .forget-form li .regist-input {
+  float: left;
+  padding: 0 10px;
+  width: 348px;
+  height: 32px;
+  border: 1px solid #c1c1c1;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px 0px #dfdfdf inset;
+  box-sizing: border-box;
+}
+.alert-main .alert-body .forget-form li .regist-input input {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  font-family: "微软雅黑";
+  line-height: 30px;
+  float: left;
+}
+.alert-main .alert-body .forget-form li .regist-input .verification-code {
+  width: 170px;
+}
+.alert-main .alert-body .submit-btn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #1296D6;
+  margin: 0 auto;
+  border: none;
+}

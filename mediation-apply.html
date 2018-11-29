@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>12348锡林郭勒法网</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<link rel="stylesheet" type="text/css" href="css/form/applyform.css" />
+		<script src="js/components/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/components/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/components/page/css/layui.css" />
+		<script src="js/components/page/layui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/components/select2/select2.min.css" />
+		<script src="js/components/select2/select2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/classic.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fy/mediation-apply.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<form class="apply-form layui-form" action="">
+			<div class="form-title">人民调解申请表</div>
+			<div class="form-content">
+				<div class="item-box">
+					<div class="item-title">
+						申请人基本情况：
+					</div>
+					<div class="item-content">
+						<table>
+							<tr>
+								<td>
+									<span>姓名</span>
+									<input type="text" id="accuserName" lay-verify="required" />
+								</td>
+								<td>
+									<span>性别</span>
+									<select id="accuserSex" lay-ignore>
+										<option value="1">男</option>
+										<option value="2">女</option>
+									</select>
+								</td>
+								<td>
+									<span>民族</span>
+									<select id="accuserEthnic" class="ethnic" lay-ignore></select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>出生年月</span>
+									<input type="text" id="accuserBirthday" />
+								</td>
+								<td>
+									<span>所在地区</span>
+									<select id="accuserCounty" class="area" lay-ignore>
+									</select>
+								</td>
+								<td>
+									<span>所在乡镇</span>
+									<!--<input type="text" id="accuserTown" />-->
+									<select id="accuserTown" class="town" lay-ignore>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<span>身份证号</span>
+									<input type="text" class="middle" id="accuserIdcard" lay-verify="identity" />
+								</td>
+								<td width="266">
+									<span>联系电话</span>
+									<input type="text" id="accuserPhone" lay-verify="phone" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<span>职业或职务</span>
+									<input type="text" class="middle" id="accuserOccupation" />
+								</td>
+								<td width="266">
+									<span>邮政编码</span>
+									<input type="text" id="accuserPostCode" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span>经常居住地</span>
+									<input type="text" class="full" id="accuserAddress" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span>户籍所在地</span>
+									<input type="text" class="full" id="accuserDomicile" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="item-title">
+						被申请人基本情况（选填）：
+					</div>
+					<div class="item-content">
+						<table>
+							<tr>
+								<td>
+									<span>姓名</span>
+									<input type="text" id="defendantName" />
+								</td>
+								<td>
+									<span>性别</span>
+									<select id="defendantSex" lay-ignore>
+										<option value="1">男</option>
+										<option value="2">女</option>
+									</select>
+								</td>
+								<td>
+									<span>民族</span>
+									<select id="defendantEthnic" class="ethnic" lay-ignore></select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>出生年月</span>
+									<input type="text" id="defendantBirthday" />
+								</td>
+								<td>
+									<span>所在地区</span>
+									<select id="defendantCounty" class="area" lay-ignore>
+									</select>
+								</td>
+								<td>
+									<span>所在乡镇</span>
+									<select id="defendantTown" class="town" lay-ignore>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<span>身份证号</span>
+									<input type="text" class="middle" id="defendantIdcard" />
+								</td>
+								<td width="266">
+									<span>联系电话</span>
+									<input type="text" id="defendantPhone" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<span>职业或职务</span>
+									<input type="text" class="middle" id="defendantOccupation" />
+								</td>
+								<td width="266">
+									<span>邮政编码</span>
+									<input type="text" id="defendantPostCode" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span>经常居住地</span>
+									<input type="text" class="full" id="defendantAddress" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span>户籍所在地</span>
+									<input type="text" class="full" id="defendantDomicile" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="item-title">
+						案件基本情况：
+					</div>
+					<div class="item-content">
+						<table>
+							<tr>
+								<td colspan="3">
+									<span>案件标题</span>
+									<input type="text" class="full" id="caseTitle" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>纠纷类型</span>
+									<select id="caseType" lay-ignore>
+									</select>
+								</td>
+								<td>
+									<span>案发地区</span>
+									<select id="caseCounty" class="area" lay-ignore>
+									</select>
+								</td>
+								<td>
+									<span>案发乡镇</span>
+									<!--<input type="text" id="defendantTown" />-->
+									<select id="caseTown" class="town" lay-ignore>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span style="vertical-align: top;">案件及申请理由陈述</span>
+									<textarea name="" rows="8" cols="" class="full" id="caseSituation"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<span style="vertical-align: top;">附件</span>
+									<div class="layui-upload full" style="display: none;">
+										<button type="button" class="layui-btn layui-btn-normal" id="testList">选择多文件</button>
+										<div class="layui-upload-list">
+											<table class="layui-table">
+												<thead>
+													<tr>
+														<th>文件名</th>
+														<th>大小</th>
+														<th>状态</th>
+														<th>操作</th>
+													</tr>
+												</thead>
+												<tbody id="demoList"></tbody>
+											</table>
+										</div>
+										<button type="button" class="layui-btn" id="testListAction">开始上传</button>
+									</div>
+									<div class="uploaded-list full" style="display: none;">
+
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="item-title">
+						案件承办人（选填）：
+					</div>
+					<div class="item-content">
+						<table>
+							<tr>
+								<td>
+									<span>人民调解委员会</span>
+									<div class="half-hasLabel search-select twh">
+										<input type="text" style="" id="peopleMediationCommittee" autocomplete="off"/>
+										<ul type="text" id="peopleMediationCommitteeList"></ul>
+									</div>
+
+								</td>
+								<td>
+									<span>人民调解员</span>
+									<div class="half-hasLabel search-select tjy">
+										<input type="text" style="" id="mediator" autocomplete="off"/>
+										<ul type="text" id="mediatorList"></ul>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="btn-list">
+				</div>
+			</div>
+		</form>
+	</body>
+
+</html>

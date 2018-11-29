@@ -1,0 +1,255 @@
+.bre {
+  padding-top: 10px;
+  padding-left: 6px;
+  font-size: 13px;
+}
+.bre ul li {
+  float: left;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.bre ul .active {
+  background: #1297d7;
+  color: #fff;
+}
+.rycx .filter {
+  width: 100%;
+  overflow: hidden;
+}
+.rycx .filter .filter-category {
+  width: 100%;
+  list-style: none;
+  height: 24px;
+  line-height: 24px;
+  padding: 10px 5px;
+}
+.rycx .filter .filter-category li {
+  float: left;
+  margin-right: 10px;
+  font-size: 13px;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.rycx .filter .filter-category li.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.rycx .filter .filter-search {
+  width: 100%;
+  padding: 10px 5px;
+  overflow: hidden;
+}
+.rycx .filter .filter-search .search-box {
+  width: 460px;
+  border: 2px solid #1296D6;
+  height: 34px;
+  float: left;
+}
+.rycx .filter .filter-search .search-box input {
+  display: inline-block;
+  width: 400px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+.rycx .filter .filter-search .search-box .search-btn {
+  float: right;
+  background: #1296D6;
+  background-image: url(../../img/search-btn.png);
+  height: 34px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px;
+}
+.rycx .filter .filter-search .search-count {
+  float: right;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.rycx .filter .filter-search .search-count #search-count {
+  color: #F52441;
+}
+.rycx .filter .area-qx,
+.rycx .filter .area-xz {
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow: hidden;
+}
+.rycx .filter .area-qx .qx-title,
+.rycx .filter .area-xz .qx-title,
+.rycx .filter .area-qx .xz-title,
+.rycx .filter .area-xz .xz-title {
+  float: left;
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+}
+.rycx .filter .area-qx .qx-list,
+.rycx .filter .area-xz .qx-list,
+.rycx .filter .area-qx .xz-list,
+.rycx .filter .area-xz .xz-list {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 5px;
+  list-style: none;
+  width: 800px;
+}
+.rycx .filter .area-qx .qx-list li,
+.rycx .filter .area-xz .qx-list li,
+.rycx .filter .area-qx .xz-list li,
+.rycx .filter .area-xz .xz-list li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+.rycx .filter .area-qx .qx-list li.active,
+.rycx .filter .area-xz .qx-list li.active,
+.rycx .filter .area-qx .xz-list li.active,
+.rycx .filter .area-xz .xz-list li.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.rycx .myd-list {
+  width: 100%;
+  font-size: 13px;
+}
+.rycx .myd-list .myd-title {
+  width: 100%;
+  height: 30px;
+  background: #f3fdfe;
+  padding-left: 80px;
+  position: relative;
+}
+.rycx .myd-list .myd-title:before {
+  content: '综合排序';
+  width: 80px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #76797a;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rycx .myd-list .myd-title ul {
+  height: 30px;
+  line-height: 30px;
+}
+.rycx .myd-list .myd-title ul li {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  padding: 0 10px;
+}
+.rycx .myd-list .myd-title ul li.active {
+  background: #1296d6;
+  color: #FFFFFF;
+}
+.rycx .myd-list .myd-member-list {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.rycx .myd-list .myd-member-list ul li {
+  width: 222px;
+  height: 380px;
+  border: 2px solid #CCCCCC;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.rycx .myd-list .myd-member-list ul li:nth-child(5n) {
+  margin-right: 0px;
+}
+.rycx .myd-list .myd-member-list ul li .user-img {
+  height: 100px;
+  width: 80px;
+  margin: 0 auto;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: #CCCCCC;
+  position: relative;
+}
+.rycx .myd-list .myd-member-list ul li .user-img img {
+  background: #FFFFFF;
+  width: 64px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+}
+.rycx .myd-list .myd-member-list ul li .user-name {
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.rycx .myd-list .myd-member-list ul li .user-name:after {
+  content: '';
+  width: 42px;
+  height: 3px;
+  background: #1296D6;
+  position: absolute;
+  left: 88px;
+  bottom: 0;
+}
+.rycx .myd-list .myd-member-list ul li .user-info {
+  margin-top: 20px;
+}
+.rycx .myd-list .myd-member-list ul li .user-info p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #898989;
+  text-align: center;
+}
+.rycx .myd-list .myd-member-list ul li .user-info .overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rycx .myd-list .myd-member-list ul li .control-list {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.rycx .myd-list .myd-member-list ul li .control-list button {
+  border: none;
+  background: #1296D6;
+  height: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+.rycx .myd-list .myd-member-list ul li .control-list .star-list {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.rycx .myd-list .myd-member-list ul li .control-list .star-list span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.rycx .myd-list .myd-member-list ul li .control-list .star-list span.active {
+  background: url(../../img/fy/active.png);
+}
+.rycx .myd-list .myd-member-list ul li .control-list .star-list span.unactive {
+  background: url(../../img/fy/unactive.png);
+}

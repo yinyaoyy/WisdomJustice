@@ -1,0 +1,388 @@
+.nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #1296D6;
+  margin-top: 122px;
+}
+.nav .nav-list {
+  width: 100%;
+  list-style: none;
+}
+.nav .nav-list li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  padding: 0 15px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.nav .nav-list li:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #C1C1C1;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+.nav .nav-list li:last-child:after {
+  content: '';
+  display: none;
+}
+.nav .nav-list li a {
+  color: #FFFFFF;
+}
+.nav .nav-list li.active:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 36px;
+  z-index: 19890125;
+  background: #fff;
+  transform: rotate(45deg);
+}
+.banner {
+  width: 100%;
+  height: 360px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.banner .banner-title {
+  font-size: 22px;
+  margin-left: 90px;
+  color: #FFFFFF;
+  margin-top: 40px;
+  text-align: left;
+}
+.banner .banner-list {
+  width: 100%;
+  height: 126px;
+  line-height: 126px;
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.banner .banner-list li {
+  float: left;
+  margin-right: 30px;
+}
+.banner .banner-list li.img-circle {
+  width: 126px;
+  height: 126px;
+}
+.banner .banner-list li.img-circle img {
+  width: 126px;
+  height: 126px;
+}
+.banner .banner-list li.img-right {
+  margin-top: 24px;
+}
+.banner .banner-btn {
+  width: 240px;
+  height: 45px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin: 40px 20px;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.banner .banner-btn.red {
+  background-color: #FF6F6F;
+  margin-top: 270px;
+}
+.banner .banner-btn.blue {
+  background-color: #1296D6;
+  margin-top: 270px;
+}
+.section {
+  padding: 30px 0;
+  height: auto;
+  overflow: hidden;
+  background-image: url(../img/list/bottom-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+.section .bread {
+  padding-left: 30px;
+  position: relative;
+  height: 30px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeef;
+  width: 100%;
+  box-sizing: border-box;
+}
+.section .bread:before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 1px;
+  left: 10px;
+}
+.section .bread ul {
+  list-style: none;
+}
+.section .bread ul li {
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+}
+.section .bread ul li:after {
+  content: '>';
+  height: 20px;
+  line-height: 20px;
+  padding: 0 3px;
+}
+.section .bread ul li:last-child:after {
+  content: '';
+  display: none;
+}
+.section .bread ul li a:hover {
+  color: #1296d6;
+}
+.section .section-left {
+  float: left;
+  width: 840px;
+}
+.section .section-left .filter {
+  width: 100%;
+  overflow: hidden;
+}
+.section .section-left .filter .filter-category {
+  width: 100%;
+  list-style: none;
+  height: 24px;
+  line-height: 24px;
+  padding: 10px 5px;
+}
+.section .section-left .filter .filter-category li {
+  float: left;
+  margin-right: 10px;
+  font-size: 13px;
+  text-align: center;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.section .section-left .filter .filter-category li.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.section .section-left .filter .filter-search {
+  width: 100%;
+  padding: 10px 5px;
+  overflow: hidden;
+}
+.section .section-left .filter .filter-search .search-box {
+  width: 460px;
+  border: 2px solid #1296D6;
+  height: 34px;
+  float: left;
+}
+.section .section-left .filter .filter-search .search-box input {
+  display: inline-block;
+  width: 400px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+.section .section-left .filter .filter-search .search-box .search-btn {
+  float: right;
+  background: #1296D6;
+  background-image: url(../img/search-btn.png);
+  height: 34px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.section .section-left .filter .filter-search .search-count {
+  float: right;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.section .section-left .filter .filter-search .search-count #search-count {
+  color: #F52441;
+}
+.section .section-left .filter .filter-area {
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow: hidden;
+}
+.section .section-left .filter .filter-area .filter-area-title {
+  float: left;
+  width: 40px;
+  height: 24px;
+  line-height: 24px;
+}
+.section .section-left .filter .filter-area .filter-area-list {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 5px;
+  list-style: none;
+  width: 700px;
+}
+.section .section-left .filter .filter-area .filter-area-list li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+.section .section-left .filter .filter-area .filter-area-list li.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.section .section-left .result-list {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.section .section-left .result-list ul {
+  list-style: none;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.section .section-left .result-list ul li {
+  background: #FFFFFF;
+  float: left;
+  height: 160px;
+  width: 400px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px #CCCCCC;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section .section-left .result-list ul li:hover {
+  box-shadow: 5px 5px 5px #1296D6;
+}
+.section .section-left .result-list ul li:nth-child(odd) {
+  margin-right: 30px;
+}
+.section .section-left .result-list ul li .result-img {
+  width: 150px;
+  float: left;
+  height: 100%;
+}
+.section .section-left .result-list ul li .result-img img {
+  margin: 27px auto 0;
+  display: block;
+}
+.section .section-left .result-list ul li .result-detail {
+  width: 250px;
+  float: left;
+  height: 100%;
+  padding: 30px 10px 20px 0;
+  box-sizing: border-box;
+}
+.section .section-left .result-list ul li .result-detail .detail-title {
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section .section-right {
+  float: right;
+  width: 320px;
+}
+.section .section-right .news-box {
+  width: 100%;
+  height: 360px;
+  display: block;
+}
+.section .section-right .news-box .box-title {
+  height: 30px;
+  line-height: 30px;
+}
+.section .section-right .news-box .box-title .title-text {
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+}
+.section .section-right .news-box .box-title .more {
+  float: right;
+  font-size: 13px;
+  color: #C1C1C1;
+  cursor: pointer;
+}
+.section .section-right .news-box .box-img {
+  width: 100%;
+  height: 60px;
+}
+.section .section-right .news-box .box-img img {
+  width: 100%;
+  height: 60px;
+}
+.section .section-right .news-box .box-list {
+  width: 100%;
+  height: 220px;
+  box-sizing: border-box;
+  list-style: none;
+  margin-top: 10px;
+}
+.section .section-right .news-box .box-list li {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  font-size: 13px;
+  cursor: pointer;
+  border-bottom: 1px solid #C1C1C1;
+}
+.section .section-right .news-box .box-list li:before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.section .section-right .news-box .box-list li .item-title {
+  display: inline-block;
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.section .section-right .news-box .box-list li .item-time {
+  display: inline-block;
+  width: 75px;
+  float: right;
+}
+.section .fy-sec-list {
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section .fy-sec-list li {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 20px 33px;
+}
+.section .fy-sec-list li img {
+  width: 100%;
+  height: 100%;
+}

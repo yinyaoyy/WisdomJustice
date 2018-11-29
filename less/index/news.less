@@ -1,0 +1,109 @@
+.data-news {
+    background-image: url(../img/bg2.png);
+    background-size: 100% 525px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 800px;
+    border: 1px solid transparent;
+    padding: 0 10px;
+    box-sizing: border-box;
+    .news-content {
+        width: 900px;
+        margin: 270px auto 0;
+        height: 500px;
+        background: #FFFFFF;
+        box-shadow: 3px 3px 20px #333;
+        .policy-release,
+        .service-dynamics {
+            width: 50%;
+            height: 100%;
+            float: left;
+            position: relative;
+            .news-head {
+                height: 60px;
+                line-height: 60px;
+                .news-title {
+                    float: left;
+                    height: 100%;
+                    i {
+                        overflow: hidden;
+                        height: 100%;
+                        width: 80px;
+                        display: inline-block;
+                        height: 100%;
+                        vertical-align: middle;
+                        img {
+                            height: 34px;
+                            margin: 10px 10px 0 20px;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        height: 60px;
+                        line-height: 60px;
+                        box-sizing: border-box;
+                        vertical-align: middle;
+                        font-size: 17px;
+                        margin-left: -10px;
+                        color: #1296D6;
+                    }
+                }
+                .more {
+                    height: 100%;
+                    float: right;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+            .news-list {
+                width: 100%;
+                margin-top: 10px;
+                li {
+                    padding-left: 45px;
+                    padding-right: 20px;
+                    position: relative;
+                    cursor: pointer;
+                    height: 44px;
+                    line-height: 44px;
+                    &:before {
+                        content: url(../img/icon4.png);
+                        position: absolute;
+                        top: 2px;
+                        left: 20px;
+                    }
+                    i {
+                        display: inline-block;
+                        width: 260px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 13px;
+                        &.title {}
+                        &.time {
+                            float: right;
+                            height: 44px;
+                            line-height: 44px;
+                            width: 75px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .dotted-line {
+                position: absolute;
+                left: 0px;
+                top: 80px;
+            }
+        }
+        .service-dynamics {
+            .news-list {
+                li {
+                    padding-left: 55px;
+                    &:before {
+                        left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

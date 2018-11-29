@@ -1,0 +1,1382 @@
+.nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #1296D6;
+  margin-top: 122px;
+}
+.nav .nav-list {
+  width: 100%;
+  list-style: none;
+}
+.nav .nav-list li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  padding: 0 15px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.nav .nav-list li:after {
+  content: '';
+  display: block;
+  border-right: 1px solid #C1C1C1;
+  height: 15px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+.nav .nav-list li:last-child:after {
+  content: '';
+  display: none;
+}
+.nav .nav-list li a {
+  color: #FFFFFF;
+}
+.nav .nav-list li.active:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 36px;
+  z-index: 19890125;
+  background: #fff;
+  transform: rotate(45deg);
+}
+#personal-info table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+}
+#personal-info table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+#personal-info table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+  width: 300px;
+}
+#personal-info table tbody td.title-text {
+  text-align: center;
+  width: 150px;
+}
+#personal-info table tbody td.title-text.required:before {
+  content: "⁎";
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  line-height: 30px;
+  color: #e4393c;
+  margin-right: 5px;
+}
+#personal-info table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#personal-info table tbody td input[type='text'] {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+#personal-info table tbody td input[type='radio'] {
+  vertical-align: sub;
+}
+#personal-info table tbody td select {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+#personal-info table tbody td select.birth {
+  width: 125px;
+}
+#personal-info table tbody td select.birth:first-child {
+  margin-right: 5px;
+}
+#personal-info .btn-list {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+}
+#personal-info .btn-list button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  border: none;
+  margin-right: 10px;
+}
+#feedback .filter {
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+#feedback .filter .status {
+  float: right;
+  margin-right: 20px;
+}
+#feedback .filter .status select {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+}
+#feedback .filter button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: right;
+  border: none;
+  margin-right: 10px;
+}
+#feedback table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+}
+#feedback table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+#feedback table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+}
+#feedback table tbody td.title-text {
+  text-align: left;
+}
+#feedback table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#complaint .filter {
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+#complaint .filter button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: right;
+  border: none;
+  cursor: pointer;
+}
+#complaint table {
+  margin-top: 20px;
+  font-size: 13px;
+  table-layout: fixed;
+}
+#complaint table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+#complaint table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+#complaint table tbody td.title-text {
+  text-align: left;
+}
+#complaint table tbody td:nth-child(1) {
+  width: 520px;
+}
+#complaint table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.sec-detail {
+  display: none;
+  min-height: 500px;
+}
+.sec-detail .btn-list {
+  width: 100%;
+  height: 30px;
+}
+.sec-detail .btn-list button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: right;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.sec-detail .detail-q {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  border-bottom: 2px solid #1296d6;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+.sec-detail .detail-q:before {
+  content: url(../img/q.png);
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 5px;
+  left: 8px;
+}
+.sec-detail .detail-q .q-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+}
+.sec-detail .detail-q .q-msg {
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 2;
+  padding-right: 80px;
+}
+.sec-detail .detail-q .q-time {
+  font-size: 13px;
+  text-align: right;
+}
+.sec-detail .qa-box .a-msg {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 80px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.sec-detail .qa-box .a-msg:before {
+  content: url(../img/an.png);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: #1296D6;
+  border-radius: 4px;
+  text-align: center;
+  width: 50px;
+  height: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.sec-detail .qa-box .a-msg .pj-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  z-index: 19890125;
+  color: #1296D6;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+.sec-detail .qa-box .a-msg .pj-btn p {
+  font-size: 13px;
+}
+.sec-detail .qa-box .a-msg .name {
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  color: #1296D6;
+  position: relative;
+}
+.sec-detail .qa-box .a-msg .msg {
+  font-size: 13px;
+  line-height: 2;
+}
+.sec-detail .qa-box .qa-closely {
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.sec-detail .qa-box .qa-closely .closely-q {
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 150px;
+  position: relative;
+  min-height: 26px;
+  margin-bottom: 20px;
+}
+.sec-detail .qa-box .qa-closely .closely-q:before {
+  content: '追问';
+  width: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #e1001a;
+  border-radius: 3px;
+  position: absolute;
+  top: -2px;
+  left: 50px;
+  font-size: 13px;
+  color: #E1001A;
+}
+.sec-detail .qa-box .qa-closely .closely-q .closely-time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  font-size: 13px;
+  text-align: right;
+  line-height: 2;
+}
+.sec-detail .qa-box .qa-closely .closely-a {
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 150px;
+  position: relative;
+  min-height: 26px;
+  margin-bottom: 20px;
+}
+.sec-detail .qa-box .qa-closely .closely-a:before {
+  content: '追答';
+  width: 40px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #29a0da;
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #29a0da;
+}
+.sec-detail .qa-box .qa-closely .closely-a .closely-time {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  float: right;
+  font-size: 13px;
+  text-align: right;
+  line-height: 2;
+}
+.sec-detail .qa-box .detail-thumbs {
+  padding: 20px 0;
+  border-bottom: 2px solid #1296D6;
+  text-align: right;
+  font-size: 13px;
+}
+.sec-detail .qa-box .detail-thumbs .re-time {
+  display: inline-block;
+  margin-right: 15px;
+}
+.sec-detail .qa-box .detail-thumbs #good {
+  display: inline-block;
+  margin-right: 15px;
+}
+.sec-detail .qa-box .detail-thumbs #good img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.sec-detail .qa-box .detail-thumbs #diss {
+  display: inline-block;
+  margin-right: 15px;
+}
+.sec-detail .qa-box .detail-thumbs #diss img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.sec-detail .qa-box .detail-thumbs .closely-btn {
+  display: inline-block;
+  background: transparent;
+  margin-right: 15px;
+  border: 1px solid #1296D6;
+  color: #1296D6;
+  border-radius: 4px;
+  text-align: center;
+  width: 50px;
+  height: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.sec-detail .qa-box .detail-thumbs .reClosely {
+  position: relative;
+  width: 900px;
+  margin-top: 20px;
+  height: 80px;
+  display: none;
+}
+.sec-detail .qa-box .detail-thumbs .reClosely .closelyTextarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+  padding: 5px 100px 5px 5px;
+}
+.sec-detail .qa-box .detail-thumbs .reClosely .closelyTextareaBtn {
+  position: absolute;
+  display: inline-block;
+  background: transparent;
+  margin-right: 15px;
+  border: 1px solid #1296D6;
+  color: #1296D6;
+  border-radius: 4px;
+  text-align: center;
+  width: 50px;
+  height: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  top: 30px;
+  right: 0px;
+}
+.complaint-box {
+  width: 800px;
+  height: 615px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #cccccc;
+  font-size: 13px;
+  position: absolute;
+  background: #fff;
+  z-index: 19890125;
+}
+.complaint-box .title-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.complaint-box .title-box img {
+  width: 100%;
+  height: 50px;
+}
+.complaint-box .title-box .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.complaint-box .title-box .title-word {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.complaint-box .title-box .title-line {
+  width: 100px;
+  height: 3px;
+  background: #fffcfd;
+  display: block;
+  margin-top: 3px;
+}
+.complaint-box .title-box .close-btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.complaint-box .title-box .close-btn:hover {
+  background: #E0001A;
+}
+.complaint-box .complaint-content {
+  padding: 20px 48px;
+  box-sizing: border-box;
+}
+.complaint-box .complaint-content p {
+  margin: 5px 0;
+}
+.complaint-box .complaint-content .p-user,
+.complaint-box .complaint-content .b-user {
+  width: 100%;
+}
+.complaint-box .complaint-content .p-user ul,
+.complaint-box .complaint-content .b-user ul {
+  list-style: none;
+  width: 100%;
+  padding: 6px 0;
+}
+.complaint-box .complaint-content .p-user ul .org,
+.complaint-box .complaint-content .b-user ul .org {
+  float: left;
+}
+.complaint-box .complaint-content .p-user ul li,
+.complaint-box .complaint-content .b-user ul li {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.complaint-box .complaint-content .p-user ul li .search-select,
+.complaint-box .complaint-content .b-user ul li .search-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.complaint-box .complaint-content .p-user ul li .search-select:after,
+.complaint-box .complaint-content .b-user ul li .search-select:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  z-index: 19890125;
+  width: 11px;
+  height: 13px;
+  background-image: url(../img/select.png);
+  background-size: 85% 100%;
+  background-repeat: no-repeat;
+}
+.complaint-box .complaint-content .p-user ul li .search-select input,
+.complaint-box .complaint-content .b-user ul li .search-select input {
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  border: 1px solid #CCCCCC;
+  padding: 0 10px;
+  position: absolute;
+  line-height: 30px;
+  background: #FFFFFF;
+}
+.complaint-box .complaint-content .p-user ul li .search-select ul,
+.complaint-box .complaint-content .b-user ul li .search-select ul {
+  display: none;
+  border: 1px solid #d5d5d5;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  max-height: 100px;
+  overflow-y: auto;
+  border-top: 0;
+  z-index: 20160804;
+  box-sizing: border-box;
+}
+.complaint-box .complaint-content .p-user ul li .search-select ul li,
+.complaint-box .complaint-content .b-user ul li .search-select ul li {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  padding: 0 10px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 13px;
+  display: block;
+}
+.complaint-box .complaint-content .p-user ul li .search-select ul li.on,
+.complaint-box .complaint-content .b-user ul li .search-select ul li.on {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.complaint-box .complaint-content .p-user ul li .title,
+.complaint-box .complaint-content .b-user ul li .title {
+  float: left;
+  width: 67px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.complaint-box .complaint-content .p-user ul li input,
+.complaint-box .complaint-content .b-user ul li input,
+.complaint-box .complaint-content .p-user ul li select,
+.complaint-box .complaint-content .b-user ul li select {
+  width: 275px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid #CCCCCC;
+}
+.complaint-box .complaint-content .p-user ul li .orgDiv,
+.complaint-box .complaint-content .b-user ul li .orgDiv {
+  display: inline-block;
+  width: 275px;
+  height: 30px;
+  line-height: 30px;
+}
+.complaint-box .complaint-content .p-user ul li .orgDiv #orgUl,
+.complaint-box .complaint-content .b-user ul li .orgDiv #orgUl {
+  padding: 0;
+}
+.complaint-box .complaint-content .p-user .line,
+.complaint-box .complaint-content .b-user .line {
+  width: 100%;
+  height: 2px;
+  background: #66bbd7;
+  display: block;
+}
+.complaint-box .complaint-content .q-t .q-t-title {
+  width: 100%;
+  padding: 6px 0;
+}
+.complaint-box .complaint-content .q-t .q-t-title .q-t-half {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.complaint-box .complaint-content .q-t .q-t-title .q-t-half p {
+  float: left;
+  width: 67px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  margin: 0;
+}
+.complaint-box .complaint-content .q-t .q-t-title .q-t-half input {
+  width: 275px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid #CCCCCC;
+}
+.complaint-box .complaint-content .q-t .q-t-title .q-t-half select {
+  width: 275px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 1px solid #CCCCCC;
+}
+.complaint-box .complaint-content .q-t textarea {
+  width: 705px;
+  height: 80px;
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+.complaint-box .complaint-content .identify {
+  border-bottom: 2px solid #66bbd7;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.complaint-box .complaint-content .identify label {
+  height: 30px;
+  line-height: 30px;
+  width: 70px;
+  display: inline-block;
+}
+.complaint-box .complaint-content .identify input {
+  width: 280px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 25px;
+  border: 1px solid #CCCCCC;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.complaint-box .complaint-content .identify img {
+  width: 100px;
+  height: 30px;
+  vertical-align: middle;
+}
+.complaint-box .complaint-content .identify .anony-box {
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.complaint-box .complaint-content .identify .anony-box .anony {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.complaint-box .complaint-content .word {
+  border-bottom: 2px solid #66bbd7;
+  text-align: center;
+}
+.complaint-box .complaint-content .bottom {
+  padding: 10px 230px;
+  text-align: center;
+}
+.complaint-box .complaint-content .bottom button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+}
+.complaint-box .complaint-content .bottom .submit {
+  background: #1597d2;
+  color: #fff;
+}
+.complaint-box .complaint-content .bottom .reset {
+  background: #eeeeef;
+  color: #828283;
+}
+.pj-box {
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #cccccc;
+  font-size: 13px;
+  position: absolute;
+  background: #fff;
+}
+.pj-box .top-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.pj-box .top-box img {
+  width: 100%;
+  height: 40px;
+}
+.pj-box .top-box .tit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -5px;
+}
+.pj-box .top-box .tit-word {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.pj-box .top-box .title-line {
+  width: 100px;
+  height: 3px;
+  background: #fffcfd;
+  display: block;
+  margin-top: 3px;
+}
+.pj-box .top-box .close-btn {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.pj-box .top-box .close-btn:hover {
+  background: #E0001A;
+}
+.pj-box .pj-content {
+  padding: 0px 48px;
+  box-sizing: border-box;
+}
+.pj-box .pj-content .starBox .star {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.pj-box .pj-content .starBox .star .name {
+  display: inline-block;
+}
+.pj-box .pj-content .starBox .star .name p {
+  width: 213px;
+  height: 25px;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+  color: #1296d6;
+}
+.pj-box .pj-content .starBox .star .name p span {
+  margin-right: 10px;
+}
+.pj-box .pj-content .starBox .star .star-list {
+  height: 50px;
+  text-align: center;
+  margin-right: 30px;
+  float: right;
+}
+.pj-box .pj-content .starBox .star .star-list span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.pj-box .pj-content .starBox .star .star-list span.active {
+  background: url(../img/fy/active.png);
+}
+.pj-box .pj-content .starBox .star .star-list span.unactive {
+  background: url(../img/fy/unactive.png);
+}
+.pj-box .pj-content .starBox .star textarea {
+  width: 380px;
+  height: 65px;
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-top: -15px;
+  resize: none;
+}
+.pj-box .bottom {
+  margin-bottom: 15px;
+}
+.pj-box .bottom .line {
+  width: 500px;
+  border: 1px solid #1296d6;
+  /* margin-left: -5px; */
+  display: block;
+  margin: 0px 0 15px -2px;
+}
+.pj-box .bottom .submit {
+  background: #1597d2;
+  color: #fff;
+  margin-left: 215px;
+  width: 75px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.pjbox {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #cccccc;
+  font-size: 13px;
+  position: absolute;
+  background: #fff;
+}
+.pjbox .tit-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.pjbox .tit-box img {
+  width: 100%;
+  height: 40px;
+}
+.pjbox .tit-box .tit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -5px;
+}
+.pjbox .tit-box .tit-word {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.pjbox .tit-box .title-line {
+  width: 100px;
+  height: 3px;
+  background: #fffcfd;
+  display: block;
+  margin-top: 3px;
+}
+.pjbox .tit-box .close-btn {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.pjbox .tit-box .close-btn:hover {
+  background: #E0001A;
+}
+.pjbox .pj-content {
+  padding: 0px 48px;
+  box-sizing: border-box;
+}
+.pjbox .pj-content .q-t-half p {
+  width: 213px;
+  height: 25px;
+  line-height: 20px;
+  text-align: left;
+  color: #1296d6;
+}
+.pjbox .pj-content .q-t-half textarea {
+  width: 310px;
+  height: 60px;
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+.pjbox .pj-content .q-t-half .star-list {
+  height: 50px;
+  text-align: center;
+  margin-top: -25px;
+}
+.pjbox .pj-content .q-t-half .star-list span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.pjbox .pj-content .q-t-half .star-list span.active {
+  background: url(../img/fy/active.png);
+}
+.pjbox .pj-content .q-t-half .star-list span.unactive {
+  background: url(../img/fy/unactive.png);
+}
+.pjbox .bottom {
+  margin-bottom: 15px;
+}
+.pjbox .bottom .line {
+  width: 500px;
+  border: 1px solid #1296d6;
+  /* margin-left: -5px; */
+  display: block;
+  margin: 0px 0 15px -2px;
+}
+.pjbox .bottom .submit {
+  background: #1597d2;
+  color: #fff;
+  margin-left: 115px;
+  width: 75px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+#draft .filter {
+  width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#draft .filter .filter-item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+#draft .filter .filter-item input,
+#draft .filter .filter-item select {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 200px;
+  box-sizing: border-box;
+}
+#draft .filter button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+#draft .result-table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+}
+#draft .result-table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+#draft .result-table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+#draft .result-table tbody td:nth-child(1) {
+  width: 380px;
+}
+#draft .result-table tbody td:nth-child(2) {
+  width: 150px;
+}
+#draft .result-table tbody td:nth-child(3) {
+  width: 120px;
+}
+#draft .result-table tbody td:nth-child(4) {
+  width: 150px;
+}
+#draft .result-table tbody td:nth-child(5) {
+  width: 100px;
+}
+#draft .result-table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.personalcenter {
+  margin-bottom: 30px;
+}
+.personalcenter .title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  padding-left: 50px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.personalcenter .title:before {
+  content: url(../img/icon4.png);
+  position: absolute;
+  top: 1px;
+  left: 25px;
+}
+.personalcenter .personal-content {
+  margin-top: 10px;
+  overflow: hidden;
+  min-height: 300px;
+}
+.personalcenter .personal-content .content-tab {
+  width: 240px;
+  border: 1px solid #CCCCCC;
+  margin-left: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.personalcenter .personal-content .content-tab li {
+  width: 100%;
+  line-height: 30px;
+  box-sizing: border-box;
+  display: list-item;
+  border-bottom: 1px solid #CCCCCC;
+}
+.personalcenter .personal-content .content-tab li .sub-ul {
+  display: none;
+}
+.personalcenter .personal-content .content-tab li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-left: 3px solid transparent;
+  font-size: 13px;
+  color: #000000;
+}
+.personalcenter .personal-content .content-tab li a:hover {
+  border-left: 3px solid #1296D6;
+}
+.personalcenter .personal-content .content-tab li a.lv1 {
+  padding-left: 35px;
+  position: relative;
+}
+.personalcenter .personal-content .content-tab li a.lv1:before {
+  content: url(../img/personal/normal.png);
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+.personalcenter .personal-content .content-tab li a.lv1:after {
+  content: url(../img/personal/right.png);
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+.personalcenter .personal-content .content-tab li a.lv1.active {
+  background: #1296D6;
+  color: #FFFFFF;
+}
+.personalcenter .personal-content .content-tab li a.lv1.active:before {
+  content: url(../img/personal/active.png);
+}
+.personalcenter .personal-content .content-tab li a.lv1.expanded:after {
+  content: url(../img/personal/bottom.png);
+  top: 10px;
+}
+.personalcenter .personal-content .content-tab li a.lv2 {
+  padding-left: 35px;
+  position: relative;
+}
+.personalcenter .personal-content .content-tab li a.lv2.active {
+  border-left: 3px solid #1296D6;
+}
+.personalcenter .personal-content .content-tab li a.lv2:before {
+  content: url(../img/personal/jiao.png);
+  display: block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 8px;
+  left: 22px;
+}
+.personalcenter .personal-content .content-tab li:last-child {
+  border-bottom: none;
+}
+.personalcenter .personal-content .content {
+  width: 900px;
+  margin-left: 30px;
+  float: left;
+}
+.personalcenter .personal-content .content .content-title {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  padding-left: 15px;
+}
+.personalcenter .personal-content .content .content-title:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 30px;
+  background: #1296D6;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.personalcenter .personal-content .content .tab-content {
+  display: none;
+  min-height: 500px;
+}
+.personalcenter .personal-content .content #case .filter {
+  width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.personalcenter .personal-content .content #case .filter .filter-item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.personalcenter .personal-content .content #case .filter .filter-item input,
+.personalcenter .personal-content .content #case .filter .filter-item select {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 200px;
+  box-sizing: border-box;
+}
+.personalcenter .personal-content .content #case .filter button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+.personalcenter .personal-content .content #case .result-table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.personalcenter .personal-content .content #case .result-table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+.personalcenter .personal-content .content #case .result-table thead th .time {
+  width: 170px;
+}
+.personalcenter .personal-content .content #case .result-table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.personalcenter .personal-content .content #case .result-table tbody td:nth-child(1) {
+  width: 321px;
+}
+.personalcenter .personal-content .content #case .result-table tbody td:nth-child(2) {
+  width: 270px;
+}
+.personalcenter .personal-content .content #case .result-table tbody td:nth-child(3) {
+  width: 150px;
+}
+.personalcenter .personal-content .content #case .result-table tbody td:nth-child(4) {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.personalcenter .personal-content .content #case .result-table tbody td:nth-child(5) {
+  width: 180px;
+}
+.personalcenter .personal-content .content #case .result-table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.personalcenter .personal-content .content #case .result-table tbody td .pjCase {
+  margin-left: 10px;
+}
+.personalcenter .personal-content .content #replied .filter {
+  width: 100%;
+  height: 30px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.personalcenter .personal-content .content #replied .filter .filter-item {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.personalcenter .personal-content .content #replied .filter .filter-item input,
+.personalcenter .personal-content .content #replied .filter .filter-item select {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  width: 200px;
+  box-sizing: border-box;
+}
+.personalcenter .personal-content .content #replied .filter button {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #1296D6;
+  color: #FFFFFF;
+  float: right;
+  border: none;
+  cursor: pointer;
+}
+.personalcenter .personal-content .content #replied .result-table {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.personalcenter .personal-content .content #replied .result-table thead th {
+  background-color: #ddf2fb;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+}
+.personalcenter .personal-content .content #replied .result-table tbody td {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.personalcenter .personal-content .content #replied .result-table tbody td.title-text {
+  text-align: left;
+}
+.personalcenter .personal-content .content #replied .result-table tbody td button {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  background: #1296D6;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.personalcenter .personal-content .content .pagecount {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.personalcenter .personal-content .content .pagecount .count {
+  font-size: 13px;
+  color: #1296D6;
+  float: left;
+  text-align: left;
+  height: 28px;
+  line-height: 28px;
+}
+.personalcenter .personal-content .content .pagecount .page {
+  float: right;
+  width: 820px;
+}
